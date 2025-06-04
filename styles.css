@@ -45,16 +45,15 @@ section {
 
 /* 图片画廊 */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
-  justify-content: center;
   margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 .gallery img {
-  flex: 1 1 200px; /* 每个图片最小200px，等比扩展 */
-  max-width: 200px;
+  width: 100%;
   height: auto;
   border: 2px solid red;
   border-radius: 8px;
@@ -68,6 +67,7 @@ section {
   transform: scale(1.05);
   border-color: white;
 }
+
 
 /* 视频样式 */
 .video-container {
