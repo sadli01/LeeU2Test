@@ -84,3 +84,25 @@ section {
   border-radius: 10px;
   background-color: #111;
 }
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.video-container iframe {
+  width: 80vw;
+  max-width: 960px;
+  height: 540px;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: #111;
+}
+
+section#films h1, section#films p {
+  color: red;
+  text-align: center;
+}
