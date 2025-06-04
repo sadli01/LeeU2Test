@@ -45,22 +45,20 @@ section {
 
 /* 图片画廊 */
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
   margin-top: 2rem;
-  padding: 0 1rem;
 }
 
 .gallery img {
-  width: 100%;
+  max-width: 200px;
   height: auto;
   border: 2px solid red;
   border-radius: 8px;
   transition: transform 0.3s ease;
   cursor: pointer;
-  object-fit: cover;
-  box-sizing: border-box;
 }
 
 .gallery img:hover {
@@ -68,8 +66,25 @@ section {
   border-color: white;
 }
 
-
 /* 视频样式 */
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.video-container iframe {
+  width: 80vw;
+  max-width: 960px;
+  height: 540px;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: #111;
+}
+
 .video-container {
   display: flex;
   flex-direction: column;
