@@ -1,9 +1,14 @@
 /* 全局样式 */
 body {
   margin: 0;
-  font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
+  font-family: "DengXian", "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
   background-color: #000;
   color: red;
+}
+
+/* 所有文字元素强制为红色 */
+* {
+  color: red !important;
 }
 
 /* 导航栏样式 */
@@ -34,7 +39,7 @@ nav ul li a {
 
 /* 页面区域样式 */
 section {
-  padding: 6rem 2rem 4rem; /* 增加顶部padding避免导航栏遮挡 */
+  padding: 6rem 2rem 4rem; /* 避免导航遮挡 */
   min-height: 100vh;
 }
 
