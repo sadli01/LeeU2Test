@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LeeU2 - Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <nav>
@@ -15,24 +15,27 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-
   <section id="home">
     <h1>LeeU2</h1>
     <p>你的天赋激发我的天赋!</p>
 
-    <div class="gallery" id="gallery"></div>
+    <!--<h2>My Pictures</h2>-->
+    <div class="gallery">
+      <img src="pic/pic1.jpg" alt="pic1" />
+      <img src="pic/pic2.jpg" alt="pic2" />
+      <img src="pic/pic3.jpg" alt="pic3" />
+      <img src="pic/pic4.jpg" alt="pic4" />
+      <img src="pic/pic5.jpg" alt="pic5" />
+      <img src="pic/pic6.jpg" alt="pic6" />
+      <img src="pic/pic7.jpg" alt="pic7" />
+      <img src="pic/pic8.jpg" alt="pic8" />
+      <img src="pic/pic9.jpg" alt="pic9" />
+      <img src="pic/pic10.jpg" alt="pic10" />
+      <img src="pic/pic11.jpg" alt="pic11" />
+      <img src="pic/pic12.jpg" alt="pic12" />
+      <img src="pic/pic13.jpg" alt="pic13" />
+      <!-- 按照你实际图片数量，增加对应 <img> 标签 -->
+    </div>
   </section>
-
-  <script>
-    const gallery = document.getElementById('gallery');
-    const totalImages = 13;  // 修改成你的图片数量
-
-    for (let i = 1; i <= totalImages; i++) {
-      const img = document.createElement('img');
-      img.src = `pic/pic${i}.jpg`;
-      img.alt = `pic${i}`;
-      gallery.appendChild(img);
-    }
-  </script>
 </body>
 </html>
