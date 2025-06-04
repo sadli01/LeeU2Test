@@ -25,3 +25,26 @@ section {
   padding: 4rem;
   min-height: 100vh;
 }
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.gallery img {
+  max-width: 200px;
+  height: auto;
+  border: 2px solid #f00;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  border-color: #fff;
+}
