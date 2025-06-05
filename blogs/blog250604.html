@@ -19,16 +19,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <ul style="display: flex; align-items: center;">
-      <li style="margin-right: 1.5em; font-family: 'Dancing Script', cursive; font-size: 1.6em; font-weight: bold; letter-spacing: 2px; list-style: none;">LeeU2</li>
-      <li><a href="../index.html" style="font-size:0.95em;font-weight:300;">Home</a></li>
-      <li><a href="../pics.html" style="font-size:0.95em;font-weight:300;">Pics</a></li>
-      <li><a href="../films.html" style="font-size:0.95em;font-weight:300;">Films</a></li>
-      <li><a href="../blogs.html" style="font-size:0.95em;font-weight:300;text-decoration:underline;">Blogs</a></li>
-      <li><a href="../contact.html" style="font-size:0.95em;font-weight:300;">Contact</a></li>
-    </ul>
-  </nav>
+  <div id="navbar"></div>
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
   <section id="home">
     <div class="poem-container">
       空气中飘来一抹红
@@ -52,5 +50,22 @@
       才沉沉睡去
     </div>
   </section>
+  <script>
+    document.getElementById('menu-icon').addEventListener('click', function() {
+      const menu = document.getElementById('menu');
+      if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'flex';
+        menu.style.flexDirection = 'column'; // 垂直排列
+        menu.style.position = 'absolute';
+        menu.style.top = '50%';
+        menu.style.left = '50%';
+        menu.style.transform = 'translate(-50%, -50%)';
+        menu.style.backgroundColor = '#fff'; // 背景颜色
+        menu.style.zIndex = '1000'; // 确保在最上层
+      }
+    });
+  </script>
 </body>
 </html>

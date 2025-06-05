@@ -6,66 +6,24 @@
   <title>LeeU2 - Films</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-  <style>
-    /* 临时样式补充，确保你也在 styles.css 中加上这段 */
-    .video-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
-      padding: 2rem 1rem;
-    }
-
-    .video-container iframe {
-      width: 80vw;
-      max-width: 960px;
-      height: 540px;
-      border: 2px solid red;
-      border-radius: 10px;
-      background-color: #111;
-    }
-
-    section#films h1, section#films p {
-      color: red;
-      text-align: center;
-    }
-    .play-btn {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 64px;
-      height: 64px;
-      background: rgba(0,0,0,0.3);
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-    }
-    .play-btn .triangle {
-      display: inline-block;
-      width: 0;
-      height: 0;
-      border-left: 28px solid rgba(255,255,255,0.85);
-      border-top: 16px solid transparent;
-      border-bottom: 16px solid transparent;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <ul style="display: flex; align-items: center;">
-      <li style="margin-right: 1.5em; font-family: 'Dancing Script', cursive; font-size: 1.6em; font-weight: bold; letter-spacing: 2px; list-style: none;">LeeU2</li>
-      <li><a href="index.html" style="font-size:0.95em;font-weight:300;">Home</a></li>
-      <li><a href="pics.html" style="font-size:0.95em;font-weight:300;">Pics</a></li>
-      <li><a href="films.html" style="font-size:0.95em;font-weight:300;text-decoration:underline;">Films</a></li>
-      <li><a href="blogs.html" style="font-size:0.95em;font-weight:300;">Blogs</a></li>
-      <li><a href="contact.html" style="font-size:0.95em;font-weight:300;">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- 引用 navbar.html -->
+  <div id="navbar"></div>
+  <script>
+    fetch('navbar.html')
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        return response.text();
+      })
+      .then(html => {
+        document.getElementById('navbar').innerHTML = html;
+        bindMenuEvents();
+      })
+      .catch(console.error);
+  </script>
+  <!-- 引用 navbar.html -->
 
   <section id="films">
 <!--     <h1>Films</h1> -->
@@ -105,5 +63,6 @@
     });
   });
   </script>
+  <script src="menu.js"></script><!-- 引用 navbar.html -->
 </body>
 </html>

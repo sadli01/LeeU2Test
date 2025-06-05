@@ -5,101 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LeeU2 - Contact</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    @font-face {
-      font-family: 'AALaoWaiYuGuoTi';
-      src: url('fonts/aalaowaiyuguoti.ttf') format('truetype');
-      font-display: swap;
-    }
-    
-    /* Contact section styles */
-    #contact {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    
-    #contact p {
-      margin-bottom: 2rem;
-      font-size: 1.1rem;
-    }
-    
-    .contact-methods {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-    
-    .contact-icon {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .redbook-icon {
-      width: 1.4em; /* Slightly larger than text */
-      height: 1.4em;
-      vertical-align: middle;
-    }
-    
-    .contact-text {
-      font-size: 1.1rem;
-      line-height: 1;
-    }
-    
-    /* Email item styling */
-    .contact-item:last-child {
-      font-size: 1.1rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-    
-    .contact-item:last-child::before {
-      content: "";
-      display: inline-block;
-      width: 1.4em;
-      height: 1.4em;
-      background-image: url('pic/icon_email.svg'); /* Add your email icon */
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  </style>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <nav>
-    <ul style="display: flex; align-items: center;">
-      <li style="margin-right: 1.5em; font-family: 'Dancing Script', cursive; font-size: 1.6em; font-weight: bold; letter-spacing: 2px; list-style: none;">LeeU2</li>
-      <li><a href="index.html" style="font-size:0.95em;font-weight:300;">Home</a></li>
-      <li><a href="pics.html" style="font-size:0.95em;font-weight:300;">Pics</a></li>
-      <li><a href="films.html" style="font-size:0.95em;font-weight:300;">Films</a></li>
-      <li><a href="blogs.html" style="font-size:0.95em;font-weight:300;">Blogs</a></li>
-      <li><a href="contact.html" style="font-size:0.95em;font-weight:300;text-decoration:underline;">Contact</a></li>
-    </ul>
-  </nav>
-  
+  <!-- 引用 navbar.html -->
+  <div id="navbar"></div>
+  <script>
+    fetch('navbar.html')
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        return response.text();
+      })
+      .then(html => {
+        document.getElementById('navbar').innerHTML = html;
+        bindMenuEvents();
+      })
+      .catch(console.error);
+  </script>
+  <!-- 引用 navbar.html -->
+
   <section id="contact">
     <p>Feel free to reach out to me via email or social media.</p>
-    
-    <div class="contact-methods">
-      <div class="contact-item">
-        <a href="https://www.xiaohongshu.com/user/profile/67ef5314000000000e01dfcc?xsec_token=YBj5ROXv1Ew1tkY08QdKiZD609r7qyX6tIQUSPcgLg-10=&xsec_source=app_share&xhsshare=CopyLink&appuid=63543ef5000000001901c58c&apptime=1749091534&share_id=0d4eefc37ead44fc82ecc59c01d1d3e6" target="_blank" class="contact-icon">
-          <img src="pic/icon_redbook.svg" alt="小红书" class="redbook-icon"> 
-        </a>
-      </div>
-      
-      <div class="contact-item">
-        liyu01ls1018@gmail.com
-      </div>
-    </div>
   </section>
+
+  <footer>
+    <a href="https://www.xiaohongshu.com/user/profile/67ef5314000000000e01dfcc?xsec_token=YBj5ROXv1Ew1tkY08QdKiZD609r7qyX6tIQUSPcgLg-10=&xsec_source=app_share&xhsshare=CopyLink&appuid=63543ef5000000001901c58c&apptime=1749091534&share_id=0d4eefc37ead44fc82ecc59c01d1d3e6"
+      target="_blank" class="contact-icon">
+      <img src="pic/icon_redbook.svg" alt="小红书" class="redbook-icon">
+    </a>
+    <div class="contact-email">liyu01ls1018@gmail.com</div>
+  </footer>
+
+  <script src="menu.js"></script><!-- 引用 navbar.html -->
 </body>
 </html>
