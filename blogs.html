@@ -6,52 +6,44 @@
   <title>LeeU2 - Blogs</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background: #000000;
-      color: #222;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
-    .blog-list {
-      max-width: 800px;
-      margin: 5em auto 2em auto;
-      padding: 2em;
-      /* background: #fff; */
-      border-radius: 16px;
-      /* box-shadow: 0 4px 24px rgba(0,0,0,0.07); */
-      text-align: center;
-    }
-    .blog-list a {
-      color: #e60012;
-      font-size: 1em;
-      font-family: 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
-      font-weight: 300;
-      text-decoration: none;
-      transition: color 0.2s;
-      display: inline-block;
-      margin: 2em 0;
-      background: none;
-      box-shadow: none;
-    }
-    .blog-list a:hover {
-      color: #b71c1c;
-      text-decoration: underline;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <ul style="display: flex; align-items: center;">
-      <li style="margin-right: 1.5em; font-family: 'Dancing Script', cursive; font-size: 1.6em; font-weight: bold; letter-spacing: 2px; list-style: none;">LeeU2</li>
-      <li><a href="index.html" style="font-size:0.95em;font-weight:300;">Home</a></li>
-      <li><a href="pics.html" style="font-size:0.95em;font-weight:300;">Pics</a></li>
-      <li><a href="films.html" style="font-size:0.95em;font-weight:300;">Films</a></li>
-      <li><a href="blogs.html" style="font-size:0.95em;font-weight:300;text-decoration:underline;">Blogs</a></li>
-      <li><a href="contact.html" style="font-size:0.95em;font-weight:300;">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- 引用 navbar.html -->
+  <div id="navbar"></div>
+  <script>
+    fetch('navbar.html')
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        return response.text();
+      })
+      .then(html => {
+        document.getElementById('navbar').innerHTML = html;
+        bindMenuEvents();
+      })
+      .catch(console.error);
+  </script>
+  <!-- 引用 navbar.html -->
   <section class="blog-list">
-    <a href="blogs/blog250604.html"><span style="color:#fafafa;">2025-06-04</span> <span style="color:#e0e0e0;">空气中飘来一抹红</span></a>
+    <a href="blogs/blog250604.html"><span style="color:#fafafa;">2025-06-04</span> <span style="color:#e0e0e0;">红</span></a>
   </section>
+  <script>
+    document.getElementById('menu-icon').addEventListener('click', function() {
+      const menu = document.getElementById('menu');
+      if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'flex';
+        menu.style.flexDirection = 'column'; // 垂直排列
+        menu.style.position = 'absolute';
+        menu.style.top = '50%';
+        menu.style.left = '50%';
+        menu.style.transform = 'translate(-50%, -50%)';
+        menu.style.backgroundColor = '#fff'; // 背景颜色
+        menu.style.zIndex = '1000'; // 确保在最上层
+      }
+    });
+  </script>
+  <script src="menu.js"></script><!-- 引用 navbar.html -->
 </body>
 </html>

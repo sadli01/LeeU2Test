@@ -5,33 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LeeU2 - Home</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-  </style>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <ul style="display: flex; align-items: center;">
-      <li style="margin-right: 1.5em; font-family: 'Dancing Script', cursive; font-size: 1.6em; font-weight: bold; letter-spacing: 2px; list-style: none;">LeeU2</li>
-      <li><a href="index.html" style="font-size:0.95em;font-weight:300;text-decoration:underline;">Home</a></li>
-      <li><a href="pics.html" style="font-size:0.95em;font-weight:300;">Pics</a></li>
-      <li><a href="films.html" style="font-size:0.95em;font-weight:300;">Films</a></li>
-      <li><a href="blogs.html" style="font-size:0.95em;font-weight:300;">Blogs</a></li>
-      <li><a href="contact.html" style="font-size:0.95em;font-weight:300;">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- 引用 navbar.html -->
+  <div id="navbar"></div>
+  <script>
+    fetch('navbar.html')
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        return response.text();
+      })
+      .then(html => {
+        document.getElementById('navbar').innerHTML = html;
+        bindMenuEvents();
+      })
+      .catch(console.error);
+  </script>
+  <!-- 引用 navbar.html -->
   <section id="home">
-<!--     <h1>LeeU2</h1> -->
-<!--     <p>你的天赋激发我的天赋!</p> -->
-
-    <!--<h2>My Pictures</h2>-->
     <div class="gallery">
       <img src="pic/pic1.jpg" alt="pic1" loading="lazy" />
       <img src="pic/pic2.jpg" alt="pic2" loading="lazy" />
       <img src="pic/pic3.jpg" alt="pic3" loading="lazy" />
       <img src="pic/pic4.jpg" alt="pic4" loading="lazy" />
-      <!-- 按照你实际图片数量，增加对应 <img> 标签 -->
     </div>
   </section>
+  <script src="menu.js"></script><!-- 引用 navbar.html -->
 </body>
 </html>

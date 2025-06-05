@@ -1,9 +1,11 @@
 /* 全局样式 */
 body {
   margin: 0;
-  font-family: "DengXian", "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
   background-color: #000;
   color: red;
+  font-family: "DengXian", "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
+  font-weight: 300;       /* 细字体 */
+  font-size: 0.9em;       /* 比导航栏文字略小 */
 }
 
 /* 所有文字元素强制为红色 */
@@ -11,36 +13,147 @@ body {
   color: red !important;
 }
 
-/* 导航栏样式 */
-nav {
-  background: #111;
-  padding: 1rem;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-nav ul li a {
-  color: red;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 /* 页面区域样式 */
 section {
   padding: 6rem 2rem 4rem; /* 避免导航遮挡 */
   min-height: 100vh;
+  
+  font-family: "DengXian", "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
+  font-weight: 300;       /* 细字体 */
+  font-size: 0.85em;      /* 略小 */
+}
+
+/* 顶部导航栏结构 */
+nav {
+  background-color: #000000;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 50px;
+  font-family: 'Dancing Script', cursive; /* 导航栏独立字体 */
+  justify-content: space-between; /* 保证左右元素分布 */
+  font-size: 1em;  /* 导航栏基准字号 */
+}
+
+/* logo 独立居中定位 */
+.logo {
+  font-weight: bold;
+  font-size: 1.6em;
+  letter-spacing: 2px;
+  color: white;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1100;
+  pointer-events: none; /* 防止遮挡点击 */
+}
+
+/* 菜单正常横排 */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* 菜单项样式 */
+.menu li {
+  margin-right: 1em;
+  font-weight: 300;
+  font-size: 0.95em;         /* 导航菜单字体略小于 logo */
+  font-family: 'Roboto', sans-serif; /* 导航菜单字体 */
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu li a.active {
+  text-decoration: underline;
+  font-weight: bold; /* 可选：让激活项更明显 */
+}
+
+
+/* 汉堡按钮默认隐藏 */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger div {
+  height: 3px;
+  background: red;
+  border-radius: 2px;
+}
+
+/* 关闭按钮 */
+.close-btn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 2em;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* 初始隐藏 */
+  z-index: 1100;
+}
+
+/* 移动端处理 */
+@media (max-width: 768px) {
+  /* 汉堡按钮默认显示 */
+  .hamburger {
+    display: flex;
+  }
+
+  /* 关闭按钮和汉堡按钮同处一行 */
+  .menu-buttons {
+    /* 不用改，保持flex */
+  }
+
+  /* 打开菜单时，关闭按钮显示，汉堡隐藏 */
+  .menu.open ~ .menu-buttons .hamburger {
+    display: none;
+  }
+  .menu.open ~ .menu-buttons .close-btn {
+    display: block;
+  }
+
+  /* 菜单设置保持不变 */
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding-top: 4em;
+    z-index: 1000;
+  }
+  .menu.open {
+    display: flex;
+  }
+}
+/* 禁止页面滚动 */
+body.no-scroll {
+  overflow: hidden;
 }
 
 /* 图片画廊 */
@@ -50,6 +163,10 @@ section {
   gap: 1rem;
   justify-content: center;
   margin-top: 2rem;
+
+  font-family: "DengXian", "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 0.85em;
 }
 
 .gallery img {
@@ -67,30 +184,16 @@ section {
 }
 
 /* 视频样式 */
-
 .video-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
   padding: 2rem 1rem;
-}
 
-.video-container iframe {
-  width: 80vw;
-  max-width: 960px;
-  height: 540px;
-  border: 2px solid red;
-  border-radius: 10px;
-  background-color: #111;
-}
-
-.video-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem 1rem;
+  font-family: "DengXian", "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 0.85em;
 }
 
 .video-container iframe {
@@ -105,4 +208,111 @@ section {
 section#films h1, section#films p {
   color: red;
   text-align: center;
+
+  font-family: "DengXian", "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 0.85em;
+}
+
+.play-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  background: rgba(0,0,0,0.3);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.play-btn .triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 28px solid rgba(255,255,255,0.85);
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+}
+
+/* blogs */
+
+.blog-list {
+  max-width: 800px;
+  margin: 5em auto 2em auto;
+  padding: 2em;
+  /* background: #fff; */
+  border-radius: 16px;
+  /* box-shadow: 0 4px 24px rgba(0,0,0,0.07); */
+  text-align: center;
+
+  font-family: "DengXian", "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 0.85em;
+}
+.blog-list a {
+  color: #e60012;
+  font-size: 0.9em;
+  font-family: 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+  transition: color 0.2s;
+  display: inline-block;
+  margin: 2em 0;
+  background: none;
+  box-shadow: none;
+}
+.blog-list a:hover {
+  color: #b71c1c;
+  text-decoration: underline;
+}
+
+/* contact */
+
+#contact {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  flex-grow: 1;
+}
+
+#contact p {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000000;
+  border-top: 1px solid #000000;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.contact-icon {
+  margin-bottom: 0.5rem;
+}
+
+.redbook-icon {
+  width: 1.6em;
+  height: 1.6em;
+  vertical-align: middle;
+}
+
+.contact-email {
+  font-size: 0.95rem;
+  color: #333;
 }
