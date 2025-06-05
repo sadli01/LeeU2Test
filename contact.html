@@ -11,6 +11,66 @@
       src: url('fonts/aalaowaiyuguoti.ttf') format('truetype');
       font-display: swap;
     }
+    
+    /* Contact section styles */
+    #contact {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    
+    #contact p {
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+    
+    .contact-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .contact-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .redbook-icon {
+      width: 1.4em; /* Slightly larger than text */
+      height: 1.4em;
+      vertical-align: middle;
+    }
+    
+    .contact-text {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+    
+    /* Email item styling */
+    .contact-item:last-child {
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .contact-item:last-child::before {
+      content: "";
+      display: inline-block;
+      width: 1.4em;
+      height: 1.4em;
+      background-image: url('pic/icon_email.svg'); /* Add your email icon */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
@@ -25,7 +85,8 @@
       <li><a href="contact.html" style="font-size:0.95em;font-weight:300;text-decoration:underline;">Contact</a></li>
     </ul>
   </nav>
-<section id="contact">
+  
+  <section id="contact">
     <p>Feel free to reach out to me via email or social media.</p>
     
     <div class="contact-methods">
@@ -33,11 +94,10 @@
         <a href="https://www.xiaohongshu.com/user/profile/67ef5314000000000e01dfcc?xsec_token=YBj5ROXv1Ew1tkY08QdKiZD609r7qyX6tIQUSPcgLg-10=&xsec_source=app_share&xhsshare=CopyLink&appuid=63543ef5000000001901c58c&apptime=1749091534&share_id=0d4eefc37ead44fc82ecc59c01d1d3e6" target="_blank" class="contact-icon">
           <img src="pic/icon_redbook.svg" alt="小红书" class="redbook-icon"> 
         </a>
-        <span class="contact-text">小红书主页</span>
       </div>
       
       <div class="contact-item">
-          liyu01ls1018@gmail.com
+        liyu01ls1018@gmail.com
       </div>
     </div>
   </section>
