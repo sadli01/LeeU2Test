@@ -192,12 +192,15 @@ body.no-scroll {
 }
 
 .gallery img {
-  max-width: 200px;
-  height: auto;
+  max-width: 200px; /* 最大宽度 */
+  max-height: 200px; /* 最大高度，确保不变形 */
+  width: auto; /* 自动宽度 */
+  height: auto; /* 自动高度 */
   border: 2px solid red;
   border-radius: 8px;
   transition: transform 0.3s ease;
   cursor: pointer;
+  object-fit: contain; /* 确保图片在容器内保持比例 */
 }
 
 .gallery img:hover {
