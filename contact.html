@@ -8,28 +8,108 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+  <style>
+    .page-wrapper {
+      height: 60vh;            /* 页面高度的60% */
+      display: flex;
+      justify-content: center;
+      align-items: center;     /* 水平垂直居中 */
+    }
+
+    #contact {
+      height: 100%;             /* 占page-wrapper的50%高度 */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;     /* 内容居中 */
+      text-align: center;
+    }
+
+    #contact img {
+      max-height: 70%;         /* 图片占contact高度的70% */
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    #contact p {
+      margin: 0;
+      font-size: 1em;
+      line-height: 1.2;
+    }
+
+    footer {
+      padding: 10px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+
+    .contact-icon img {
+      width: 30px;
+      height: 30px;
+      vertical-align: middle;
+    }
+
+    .contact-email {
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
   <!-- 引用 navbar.html -->
   <div id="navbar"></div>
   <script>
-    fetch('navbar.html')
-      .then(response => {
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        return response.text();
-      })
-      .then(html => {
-        document.getElementById('navbar').innerHTML = html;
+  fetch('navbar.html')
+    .then(response => {
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      return response.text();
+    })
+    .then(html => {
+      document.getElementById('navbar').innerHTML = html;
+      
+      // 这里是动态添加 active 类
+      const path = window.location.pathname;
+
+      if (path.includes('blogs')) {
+        document.getElementById('nav-blogs')?.classList.add('active');
+      } else if (path.includes('films')) {
+        document.getElementById('nav-films')?.classList.add('active');
+      } else if (path.includes('pics')) {
+        document.getElementById('nav-pics')?.classList.add('active');
+      } else if (path.includes('contact')) {
+        document.getElementById('nav-contact')?.classList.add('active');
+      } else {
+        document.getElementById('nav-home')?.classList.add('active');
+      }
+
+      // 如果你有这个函数也可以保留
+      if (typeof bindMenuEvents === 'function') {
         bindMenuEvents();
-      })
-      .catch(console.error);
+      }
+    })
+    .catch(console.error);
   </script>
   <!-- 引用 navbar.html -->
 
-  <section id="contact">
-    <p>Feel free to reach out to me via email or social media.</p>
-  </section>
-
+  <div class="page-wrapper">
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="gallery">
+        <img src="pic/about1.webp" alt="About Image" loading="lazy" class="fullscreenImage"/>
+      </div>
+      <p>2000年生.女生.常驻杭州</p>
+      <p>·</p>
+      <p>现在主业是数据工程师，副业是化妆师</p>
+      <p>希望以后主业是化妆师，副业是数据工程师</p>
+      <p>-</p>
+      <p>喜欢音乐、电影、摄影、徒步、运动、滑板、手工...</p>
+      <p>因为喜欢，所以可以不计时间成本地投入</p>
+      <p>·</p>
+      <p>Feel free to reach out to me via email or social media.</p>
+    </section>
+  </div>
+  <!-- Footer -->
   <footer>
     <a href="https://www.xiaohongshu.com/user/profile/67ef5314000000000e01dfcc?xsec_token=YBj5ROXv1Ew1tkY08QdKiZD609r7qyX6tIQUSPcgLg-10=&xsec_source=app_share&xhsshare=CopyLink&appuid=63543ef5000000001901c58c&apptime=1749091534&share_id=0d4eefc37ead44fc82ecc59c01d1d3e6"
       target="_blank" class="contact-icon">
@@ -37,7 +117,7 @@
     </a>
     <div class="contact-email">liyu01ls1018@gmail.com</div>
   </footer>
-
-  <script src="menu.js"></script><!-- 引用 navbar.html -->
+  <script src="/menu.js"></script>
+  <script src="fullscreen.js"></script> <!-- 引入全屏功能 -->
 </body>
 </html>
