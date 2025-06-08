@@ -358,3 +358,12 @@ footer {
   filter: brightness(0.3);
   pointer-events: none;
 }
+
+/* 红色分割细线 <hr class="custom-divider"> */
+.custom-divider {
+  border: none; /* 移除默认样式 */
+  height: 1px;  /* 高度 */
+  background-color: #ff0000; /* 红色 */
+  margin: 10px 0; /* 调整上下边距 */
+  width: 80%; /* 控制宽度（可选） */
+}
