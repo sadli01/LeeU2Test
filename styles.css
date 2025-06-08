@@ -327,17 +327,34 @@ footer {
   z-index: 999;
 }
 
-.contact-icon {
-  margin-bottom: 0.5rem;
+
+
+.fullscreenImage {
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
 }
 
-.redbook-icon {
-  width: 1.6em;
-  height: 1.6em;
-  vertical-align: middle;
+.fullscreenImage:hover {
+  transform: scale(1.02);
 }
 
-.contact-email {
-  font-size: 0.95rem;
-  color: #333;
+
+/* 用于点击后图片浮层 */
+.image-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80vw;
+  max-height: 80vh;
+  z-index: 9999;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* 背景淡化效果 */
+.dimmed {
+  filter: brightness(0.3);
+  pointer-events: none;
 }
