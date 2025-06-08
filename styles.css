@@ -337,7 +337,6 @@ footer {
 .fullscreenImage:hover {
   transform: scale(1.02);
 }
-
 /* 遮罩层样式 */
 .image-overlay {
   position: fixed;
@@ -350,21 +349,8 @@ footer {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  cursor: pointer;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  cursor: pointer;
-
-  /* 补充建议：防止点击图片内容也冒泡触发关闭 */
   padding: 20px;
+  cursor: pointer;
 }
 
 /* 图片容器 */
@@ -372,10 +358,13 @@ footer {
   position: relative;
   width: 60vw;
   height: 60vh;
-  cursor: default;
+  max-width: 90vw;
+  max-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: default;
+  z-index: 1001;
 }
 
 /* 放大图片 */
@@ -383,8 +372,8 @@ footer {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  display: block;
   border-radius: 8px;
+  display: block;
 }
 
 /* 关闭按钮 */
@@ -398,10 +387,19 @@ footer {
   font-size: 40px;
   cursor: pointer;
   padding: 0 15px;
+  z-index: 1002;
+  pointer-events: auto;
 }
 
-/* 页面变暗效果 */
-.dimmed {
-  filter: brightness(0.7);
-  transition: filter 0.3s;
+/* 响应式适配手机 */
+@media (max-width: 768px) {
+  .image-container {
+    width: 80vw;
+    height: 50vh;
+  }
+  .close-btn {
+    top: -30px;
+    right: -5px;
+    font-size: 30px;
+  }
 }
