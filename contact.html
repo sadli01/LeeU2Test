@@ -48,6 +48,8 @@
       padding: 10px;
       text-align: center;
       font-size: 0.9em;
+      /* border-top: 0.01px solid #ff0000; 1px 红色分割线 */
+      /* margin-top: 10px; 可选：调整分割线与内容的间距 */
     }
 
     .contact-icon img {
@@ -77,37 +79,7 @@
 <body>
   <!-- 引用 navbar.html -->
   <div id="navbar"></div>
-  <script>
-  fetch('navbar.html')
-    .then(response => {
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      return response.text();
-    })
-    .then(html => {
-      document.getElementById('navbar').innerHTML = html;
-      
-      // 这里是动态添加 active 类
-      const path = window.location.pathname;
-
-      if (path.includes('blogs')) {
-        document.getElementById('nav-blogs')?.classList.add('active');
-      } else if (path.includes('films')) {
-        document.getElementById('nav-films')?.classList.add('active');
-      } else if (path.includes('pics')) {
-        document.getElementById('nav-pics')?.classList.add('active');
-      } else if (path.includes('contact')) {
-        document.getElementById('nav-contact')?.classList.add('active');
-      } else {
-        document.getElementById('nav-home')?.classList.add('active');
-      }
-
-      // 如果你有这个函数也可以保留
-      if (typeof bindMenuEvents === 'function') {
-        bindMenuEvents();
-      }
-    })
-    .catch(console.error);
-  </script>
+  <script src="navunderline.js"></script>
   <!-- 引用 navbar.html -->
 
   <div class="page-wrapper">
@@ -127,10 +99,11 @@
     </section>
   </div>
   <!-- Footer -->
+  <hr class="custom-divider">
   <footer>
     <a href="https://www.xiaohongshu.com/user/profile/67ef5314000000000e01dfcc?xsec_token=YBj5ROXv1Ew1tkY08QdKiZD609r7qyX6tIQUSPcgLg-10=&xsec_source=app_share&xhsshare=CopyLink&appuid=63543ef5000000001901c58c&apptime=1749091534&share_id=0d4eefc37ead44fc82ecc59c01d1d3e6"
       target="_blank" class="contact-icon">
-      <img src="pic/icon_redbook.svg" alt="小红书" class="redbook-icon">
+      <img src="pic/icon_redbook.svg" alt="小红书">
     </a>
     <div class="contact-email">email - liyu01ls1018@gmail.com</div>
     <div class="contact-email">wechat - LY404u *注明来意*</div>

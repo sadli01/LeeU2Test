@@ -11,50 +11,22 @@
 <body>
   <!-- 引用 navbar.html -->
   <div id="navbar"></div>
-  <script>
-  fetch('navbar.html')
-    .then(response => {
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      return response.text();
-    })
-    .then(html => {
-      document.getElementById('navbar').innerHTML = html;
-      
-      // 这里是动态添加 active 类
-      const path = window.location.pathname;
-
-      if (path.includes('blogs')) {
-        document.getElementById('nav-blogs')?.classList.add('active');
-      } else if (path.includes('films')) {
-        document.getElementById('nav-films')?.classList.add('active');
-      } else if (path.includes('pics')) {
-        document.getElementById('nav-pics')?.classList.add('active');
-      } else if (path.includes('contact')) {
-        document.getElementById('nav-contact')?.classList.add('active');
-      } else {
-        document.getElementById('nav-home')?.classList.add('active');
-      }
-
-      // 如果你有这个函数也可以保留
-      if (typeof bindMenuEvents === 'function') {
-        bindMenuEvents();
-      }
-    })
-    .catch(console.error);
-  </script>
+  <script src="navunderline.js"></script>
   <!-- 引用 navbar.html -->
-
   <section id="home">
-    <div class="gallery">
-      <img src="pic/makeup1_0.webp" alt="pic1" loading="lazy" class="fullscreenImage"/>
-      <img src="pic/makeup2_0.webp" alt="pic2" loading="lazy" class="fullscreenImage"/>
-      <img src="pic/makeup3_0.webp" alt="pic2" loading="lazy" class="fullscreenImage"/>
-      <img src="pic/hair1_0.webp" alt="pic2" loading="lazy" class="fullscreenImage"/>
-      <img src="pic/hair2_0.webp" alt="pic2" loading="lazy" class="fullscreenImage"/>
-      <!-- 根据实际添加更多图片 -->
+    <div class="gallery">  
+      <a href="picproj/pic1.html"> <img src="pic/pic1.webp" alt="pic1" loading="lazy" class="fullscreenImage"/> </a>
+      <a href="picproj/pic2.html"> <img src="pic/pic2.webp" alt="pic2" loading="lazy" class="fullscreenImage"/> </a>
+      <a href="picproj/pic3.html"> <img src="pic/pic3.webp" alt="pic3" loading="lazy" class="fullscreenImage"/> </a>
+      <a href="picproj/pic4.html"> <img src="pic/pic4.webp" alt="pic4" loading="lazy" class="fullscreenImage"/> </a>
+    </div>
+    <div class="gallery">  
+      <a href="picproj/pic6.html"> <img src="pic/pic6_5.webp" alt="pic6" loading="lazy" class="fullscreenImage"/> </a>
+      <a href="picproj/pic8.html"> <img src="pic/pic8_0.webp" alt="pic8" loading="lazy" class="fullscreenImage"/> </a>
+      <a href="picproj/pic7.html"> <img src="pic/pic7.webp" alt="pic7" loading="lazy" class="fullscreenImage"/> </a>
     </div>
   </section>
   <script src="menu.js"></script><!-- 引用 navbar.html -->
-  <script src="fullscreen.js"></script> <!-- 引入全屏功能 -->
+  <!-- <script src="fullscreen.js"></script> 引入全屏功能 -->
 </body>
 </html>
