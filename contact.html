@@ -15,7 +15,7 @@
       flex-direction: column;  /* 垂直排列内容 */
       justify-content: center;
       align-items: center;     /* 水平垂直居中 */
-      overflow-y: auto;       /* 允许垂直滚动 */
+      /* overflow-y: auto;       允许垂直滚动 */
       max-height: 100vh;      /* 最大高度为视口高度 */
     }
 
@@ -27,7 +27,7 @@
       align-items: center;      /* 内容居中 */
       text-align: center;
       padding: 20px;           /* 添加一些内边距 */
-      overflow-y: auto;        /* 允许垂直滚动 */
+      /* overflow-y: auto;        允许垂直滚动 */
     }
 
     #contact img {
@@ -51,13 +51,26 @@
     }
 
     .contact-icon img {
-      width: 30px;
-      height: 30px;
+      width: 18px;
+      height: 18px;
       vertical-align: middle;
     }
 
     .contact-email {
       margin-top: 5px;
+      font-size: 0.6em;  /* 比正文更小 */
+      font-style: italic;   
+      color: #555;        /* 可选：更低调的灰色 */
+    }
+
+    .poem-container {
+      max-width: 700px;
+      margin: 2em auto;
+      padding: 2em;
+      font-size: 0.9em;
+      line-height: 2.1;
+      white-space: pre-line;
+      text-align: center;
     }
   </style>
 </head>
@@ -100,14 +113,17 @@
   <div class="page-wrapper">
     <!-- Contact Section -->
     <section id="contact">
+      <div class="poem-container">
+        2000  天秤  INTP-A  女生  杭州
+        现在主业是数据工程师，副业是化妆师。
+        希望以后主业是化妆师，副业是数据工程师。
+        喜欢音乐、电影、摄影、徒步、运动、滑板、手工...
+        Feel free to reach out to me via email or social media.
+        希望能结识兴趣相投的朋友。
+      </div>
       <div class="gallery">
         <img src="pic/about1.webp" alt="About Image" loading="lazy" class="fullscreenImage"/>
       </div>
-      <p>2000  INTP-A  女生  杭州</p>
-      <p>现在主业是数据工程师，副业是化妆师</p>
-      <p>希望以后主业是化妆师，副业是数据工程师</p>
-      <p>喜欢音乐、电影、摄影、徒步、运动、滑板、手工...</p>
-      <p>Feel free to reach out to me via email or social media.</p>
     </section>
   </div>
   <!-- Footer -->
@@ -116,7 +132,8 @@
       target="_blank" class="contact-icon">
       <img src="pic/icon_redbook.svg" alt="小红书" class="redbook-icon">
     </a>
-    <div class="contact-email">liyu01ls1018@gmail.com</div>
+    <div class="contact-email">email - liyu01ls1018@gmail.com</div>
+    <div class="contact-email">wechat - LY404u *注明来意*</div>
   </footer>
   <script src="/menu.js"></script>
   <script src="fullscreen.js"></script> <!-- 引入全屏功能 -->
