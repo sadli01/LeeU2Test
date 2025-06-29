@@ -99,8 +99,8 @@ for filename in os.listdir(input_dir):
             print(f'Converted {input_file} to {output_file}')
 
             # 删除原来的 jpg 文件（可选）
-            os.remove(input_file)
-            print(f'Removed original file {input_file}')
+            # os.remove(input_file)
+            # print(f'Removed original file {input_file}')
 
         except Exception as e:
             print(f"无法处理文件 {input_file}: {e}")
