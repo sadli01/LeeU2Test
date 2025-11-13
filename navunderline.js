@@ -14,8 +14,10 @@ fetch('navbar.html')
       document.getElementById('nav-blogs')?.classList.add('active');
     } else if (path.includes('films') || path.includes('film')) {
       document.getElementById('nav-films')?.classList.add('active');
-    } else if (path.includes('pics') || path.includes('picproj') || path.includes('pic')) {
-      document.getElementById('nav-pics')?.classList.add('active');
+    } else if (path.includes('secret') || path.includes('secretproj')) {
+      document.getElementById('nav-secrets')?.classList.add('active');
+    } else if (path.includes('photo') || path.includes('photoproj')) {
+      document.getElementById('nav-photo')?.classList.add('active');
     } else if (path.includes('contact')) {
       document.getElementById('nav-contact')?.classList.add('active');
     } else if (path.includes('makeup')) {
