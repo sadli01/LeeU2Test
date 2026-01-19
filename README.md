@@ -1,63 +1,90 @@
-* LeeU2
-** 环境
+# LeeU2 作品集网站
 
-** 本地测试
-python3 -m http.server 8000  -->  然后访问浏览器 http://localhost:8000
-ps aux | grep http.server
-kill -9 xxxxx
+这是一个展示 LeeU2 创作作品的个人作品集网站，包括化妆发型、摄影、秘密项目、电影视频、博客等内容。
 
-* prompt
-依次往下分析每个子文件夹下目录结构，然后从全局的角度分析整个项目，怎么修改可以方便项目内容可以更高效地更新。
+## 项目结构
 
-* 网页设计
-** 导航栏
-*** Home
-对应 index.html，分别从 Makeup&hair、Photo、Secrets、Films、Blogs、Contact 自主挑选html嵌入当前页面（封面在pic文件夹中选择），网页的顺序排版根据自己的喜好决定。
-*** Makeup&hair
-对应 makeup/ 文件夹，包含 index.html 作为化妆发型作品总览页，展示各作品的缩略图。详情页位于 makeupproj/ 文件夹中，包含多个独立的项目页面（makeup1and2.html、makeup3.html、makeup4.html、makeup5.html、makeup6.html、makeup7.html、makeup8.html、makeup9.html、hair1.html）。
-*** Photo
-对应 photo/ 文件夹，包含 index.html 作为摄影作品总览页。详情页位于 photoproj/ 文件夹中，包含多个摄影项目页面（photo1.html、photo2.html、photo3.html、photo4.html、photo5.html）。
-*** Secrets
-对应 secret/ 文件夹，包含 index.html 作为私人/特别项目作品总览页。详情页位于 secretproj/ 文件夹中，包含多个秘密项目页面（secret1.html、secret2.html、secret3.html、secret4.html、secret6.html、secret7.html、secret8.html）。
-*** Films
-对应 films/ 文件夹，包含 index.html 作为电影/视频作品展示页，通过嵌入B站播放器展示作品视频，支持点击播放功能。
-*** Blogs
-对应 blogs/ 文件夹，包含 index.html 作为博客文章列表页，以及具体的博客文章页面（blog250604.html）。
-*** Contact
-对应 contact/ 文件夹，包含 index.html 作为联系方式页面。
-
-* 目录概述
-/LeeU2/
-├── assets/           # 统一资源文件夹
-│   ├── css/
-│   ├── js/
-│   ├── images/       # 按板块分类的图片
-│   │   ├── makeup/
-│   │   ├── photo/
-│   │   ├── secret/
-│   │   └── films/
-│   └── fonts/
-├── templates/        # HTML模板
-│   ├── layout.html   # 基础布局模板
-│   ├── gallery.html  # 画廊页面模板
-│   └── project.html  # 项目详情模板
-├── content/          # 内容文件夹
+```
+/LeeU2Test/
+├── assets/              # 统一资源目录
+│   ├── css/             # 样式文件
+│   │   └── styles.css
+│   ├── js/              # JavaScript 脚本
+│   │   ├── menu.js
+│   │   ├── navunderline.js
+│   │   └── fullscreen.js
+│   └── fonts/           # 字体文件
+│       └── aalaowaiyuguoti.ttf
+├── pic/                 # 媒体资源
 │   ├── makeup/
-│   │   ├── index.html    # 总览页
-│   │   └── projects/     # 所有makeup项目
 │   ├── photo/
-│   │   ├── index.html    # 总览页
-│   │   └── projects/     # 所有photo项目
 │   ├── secret/
-│   │   ├── index.html    # 总览页
-│   │   └── projects/     # 所有secret项目
-│   ├── films/
-│   │   ├── index.html    # 总览页
-│   │   └── projects/     # 所有films项目
-│   ├── blogs/
-│   │   ├── index.html    # 总览页
-│   │   └── projects/     # 所有blogs项目
-│   └── contact/
-├── index.html        # 首页
-├── styles.css        # 主样式文件
-└── scripts.js        # 主脚本文件
+│   └── film/
+├── makeup/              # 化妆作品总览
+├── makeupproj/          # 化妆作品详情页
+├── photo/               # 摄影作品总览
+├── photoproj/           # 摄影作品详情页
+├── secret/              # 秘密项目总览
+├── secretproj/          # 秘密项目详情页
+├── films/               # 电影视频页面
+├── blogs/               # 博客文章
+├── contact/             # 联系方式
+└── index.html           # 网站首页
+```
+
+## 本地开发
+
+启动本地服务器：
+```bash
+python3 -m http.server 8000
+```
+
+然后在浏览器访问：`http://localhost:8000`
+
+停止服务器：
+```bash
+ps aux | grep http.server
+kill -9 [进程ID]
+```
+
+## 网站内容
+
+### 导航栏结构
+
+- **Home** (`index.html`) - 网站首页，精选展示来自各个分类的优秀作品
+- **Makeup&Hair** (`makeup/`) - 化妆发型作品总览，详情页在 `makeupproj/` 目录
+- **Photo** (`photo/`) - 摄影作品总览，详情页在 `photoproj/` 目录
+- **Secrets** (`secret/`) - 私人/特别项目总览，详情页在 `secretproj/` 目录
+- **Films** (`films/`) - 电影视频作品，通过 B站播放器展示
+- **Blogs** (`blogs/`) - 博客文章列表
+- **Contact** (`contact/`) - 联系方式页面
+
+## 更新内容
+
+### 添加新作品
+
+1. 将媒体文件上传到 `pic/` 对应的子目录
+2. 在对应的 `*proj/` 目录创建详情页 HTML
+3. 在总览页（如 `makeup/index.html`）添加作品链接和缩略图
+
+### 修改样式或脚本
+
+- CSS 样式：编辑 `assets/css/styles.css`
+- JavaScript：编辑 `assets/js/` 目录中的对应文件
+- 所有页面会自动应用更改，无需逐个修改
+
+## 优化改进
+
+### 第一阶段（已完成）
+
+✅ 统一资源文件到 `/assets/` 目录
+✅ 消除脚本文件重复
+✅ 创建项目文档
+
+### 第二阶段（计划中）
+
+- 引入静态网站生成器
+- 实现 HTML 模板化
+- 优化图片加载策略
+
+详细优化方案请参考 [skills.md](skills.md)

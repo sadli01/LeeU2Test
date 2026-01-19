@@ -44,5 +44,12 @@ function bindMenuEvents() {
   }
   
   // 确保 DOM 加载后执行
-  document.addEventListener("DOMContentLoaded", bindMenuEvents);
+  // 注意：如果使用 loadNavbar.js，事件将由它触发
+  // 否则在 DOMContentLoaded 时自动执行
+  if (document.readyState === 'loading') {
+    document.addEventListener("DOMContentLoaded", bindMenuEvents);
+  } else if (document.getElementById('menu')) {
+    // 如果 menu 已经存在，直接绑定
+    bindMenuEvents();
+  }
   
