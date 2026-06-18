@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-04-29",
+  "films": [
+    {
+      "id": "film_fog",
+      "title": "Fog",
+      "cover": "/pic/film/film_fog.webp",
+      "player": "https://player.bilibili.com/player.html?bvid=BV1oKT8zLEyL",
+      "featured": true,
+      "order": 0
+    },
+    {
+      "id": "film_seagullAndSunset",
+      "title": "Seagull And Sunset",
+      "cover": "/pic/film/film_seagullAndSunset.webp",
+      "player": "https://player.bilibili.com/player.html?bvid=BV1SHT8zNEdj",
+      "featured": true,
+      "order": 1
+    },
+    {
+      "id": "film_jejuSummerDreams",
+      "title": "Jeju Summer Dreams",
+      "cover": "/pic/film/film_jejuSummerDreams.webp",
+      "player": "https://player.bilibili.com/player.html?bvid=BV1bx3wzYE8Z",
+      "featured": true,
+      "order": 2
+    },
+    {
+      "id": "film_hairWindSunset",
+      "title": "Hair Wind Sunset",
+      "cover": "/pic/film/film_hairWindSunset.webp",
+      "player": "https://player.bilibili.com/player.html?bvid=BV11T3gzmEQc",
+      "featured": true,
+      "order": 3
+    },
+    {
+      "id": "film_chongsheng",
+      "title": "Chongsheng",
+      "cover": "/pic/film/film_chongsheng.webp",
+      "player": "https://player.bilibili.com/player.html?bvid=BV1yg3gz1EyM",
+      "featured": true,
+      "order": 4
+    }
+  ]
+}

@@ -20,16 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
   
         const imgContainer = document.createElement('div');
         imgContainer.className = 'image-container';
-        imgContainer.addEventListener('click', e => e.stopPropagation()); // 防止点击图片关闭
   
         const imgElement = document.createElement('img');
         imgElement.src = img.src;
         imgElement.alt = img.alt;
+        imgElement.addEventListener('click', e => e.stopPropagation());
   
         const closeBtn = document.createElement('button');
         closeBtn.className = 'close-btn';
         closeBtn.innerHTML = '×';
-        closeBtn.addEventListener('click', closeEnlarged);
+        closeBtn.addEventListener('click', e => {
+          e.stopPropagation();
+          closeEnlarged();
+        });
   
         imgContainer.appendChild(imgElement);
         imgContainer.appendChild(closeBtn);
@@ -38,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
         document.body.style.overflow = 'hidden';
   
+        imgContainer.addEventListener('click', closeEnlarged);
         overlay.addEventListener('click', () => {
           closeEnlarged();
         });

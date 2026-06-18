@@ -11,8 +11,9 @@ except ImportError:
     print("警告: pillow-heif 未安装，HEIC 格式将无法处理。请运行: pip install pillow-heif")
 
 # 指定目录
-input_dir = 'pic/photo/photo4_hannah_yellowStone/photo4_1/'
-output_dir = 'pic/photo/photo4_hannah_yellowStone/photo4_1/'
+input_dir = '/Users/yuli/code_proj/code/LeeU2/LeeU2Test/pic/portrait/LFY'
+output_dir = '/Users/yuli/code_proj/code/LeeU2/LeeU2Test/pic/portrait/LFY'
+proj_name = 'portrait_'
 
 # 遍历目录中的所有文件
 for filename in os.listdir(input_dir):
@@ -64,8 +65,6 @@ for filename in os.listdir(input_dir):
 # =========================
 # 给所有 .webp 文件加前缀
 # =========================
-
-proj_name = 'photo'
 
 for filename in os.listdir(output_dir):
     if filename.lower().endswith('.webp'):

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeeU2 - Gallery Editor</title>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/gallery-editor.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body class="editor-body">
+  <main class="editor-shell">
+    <aside class="editor-sidebar">
+      <div class="editor-brand">LeeU2 Editor</div>
+      <div class="editor-tabs" role="tablist" aria-label="内容板块">
+        <button class="editor-tab is-active" data-section-tab="home">Home</button>
+        <button class="editor-tab" data-section-tab="makeup">Makeup&Hair</button>
+        <button class="editor-tab" data-section-tab="photo">Photo</button>
+        <button class="editor-tab" data-section-tab="portrait">Portrait</button>
+        <button class="editor-tab" data-section-tab="secret">Secret</button>
+        <button class="editor-tab" data-section-tab="films">Video</button>
+        <button class="editor-tab" data-section-tab="blogs">Blog</button>
+      </div>
+      <div class="editor-project-list" id="itemList"></div>
+    </aside>
+
+    <section class="editor-main">
+      <header class="editor-toolbar">
+        <div>
+          <div class="editor-kicker" id="sectionLabel">作品资料管理</div>
+          <h1 id="itemTitle">选择一个条目</h1>
+        </div>
+        <div class="editor-actions">
+          <button id="saveLocalJson" class="editor-button">保存到本地项目</button>
+          <button id="downloadJson" class="editor-button">导出 JSON</button>
+          <button id="copyJson" class="editor-button">复制 JSON</button>
+        </div>
+      </header>
+
+      <section class="editor-workspace" id="projectWorkspace" hidden>
+        <form class="editor-form" id="projectForm">
+          <label>
+            <span>作品标题</span>
+            <input id="titleInput" type="text" />
+          </label>
+          <label>
+            <span>作品 ID</span>
+            <input id="idInput" type="text" disabled />
+          </label>
+          <div class="editor-switches">
+            <label><input id="visibleInput" type="checkbox" /> 公开展示</label>
+            <label><input id="categoryInput" type="checkbox" /> 显示在分类页</label>
+            <label><input id="featuredInput" type="checkbox" /> 显示在首页</label>
+          </div>
+        </form>
+
+        <div class="editor-grid-tools">
+          <div>
+            <div class="editor-section-title">图片排序与封面</div>
+            <p>拖拽图片调整详情页顺序，点击“设为封面”更换分类页和首页封面。</p>
+          </div>
+          <button id="showHidden" class="editor-button" aria-pressed="false">显示隐藏图片</button>
+        </div>
+
+        <div class="editor-image-grid" id="imageGrid"></div>
+      </section>
+
+      <section class="editor-workspace" id="filmWorkspace" hidden>
+        <form class="editor-form">
+          <label>
+            <span>视频标题</span>
+            <input id="filmTitleInput" type="text" />
+          </label>
+          <label>
+            <span>视频 ID</span>
+            <input id="filmIdInput" type="text" disabled />
+          </label>
+          <label>
+            <span>封面图</span>
+            <input id="filmCoverInput" type="text" />
+          </label>
+          <label>
+            <span>B站播放器地址</span>
+            <input id="filmPlayerInput" type="text" />
+          </label>
+          <label>
+            <span>排序</span>
+            <input id="filmOrderInput" type="number" />
+          </label>
+          <div class="editor-switches">
+            <label><input id="filmFeaturedInput" type="checkbox" /> 显示在首页</label>
+          </div>
+        </form>
+      </section>
+
+      <section class="editor-workspace" id="blogWorkspace" hidden>
+        <form class="editor-form">
+          <label>
+            <span>文章标题</span>
+            <input id="blogTitleInput" type="text" />
+          </label>
+          <label>
+            <span>文章 ID</span>
+            <input id="blogIdInput" type="text" disabled />
+          </label>
+          <label>
+            <span>日期</span>
+            <input id="blogDateInput" type="text" />
+          </label>
+          <label>
+            <span>链接</span>
+            <input id="blogHrefInput" type="text" />
+          </label>
+          <label>
+            <span>排序</span>
+            <input id="blogOrderInput" type="number" />
+          </label>
+          <div class="editor-switches">
+            <label><input id="blogVisibleInput" type="checkbox" /> 公开展示</label>
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <aside class="editor-preview">
+      <div class="editor-section-title">实时预览</div>
+      <div id="preview" class="editor-preview-stage"></div>
+      <div class="editor-section-title">导出内容</div>
+      <textarea id="jsonOutput" spellcheck="false"></textarea>
+    </aside>
+  </main>
+
+  <script src="/admin/gallery-editor.js"></script>
+  <div id="site-footer"></div>
+  <script src="/assets/js/loadFooter.js"></script>
+</body>
+</html>

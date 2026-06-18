@@ -1,4 +1,4 @@
-import cv2  # 3.10.18
+import cv2  # 3.13.9(base)
 import os
 from PIL import Image
 
@@ -13,10 +13,10 @@ except ImportError:
 # # 指定目录
 # input_dir = 'pic/photo/photo4_hannah_yellowStone/'
 # output_dir = 'pic/photo/photo4_hannah_yellowStone/'
-input_dir = 'pic/photo/photo4_hannah_yellowStone/photo4_1/'
-output_dir = 'pic/photo/photo4_hannah_yellowStone/photo4_1/'
+input_dir = '/Users/yuli/code_proj/code/LeeU2/LeeU2Test/pic/portrait/XCRJ'
+output_dir = input_dir
 
-proj_name = 'photo'
+proj_name = 'portrait_'
 
 for filename in os.listdir(input_dir):
     filename_lower = filename.lower()
