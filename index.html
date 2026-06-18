@@ -9,83 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- 引用 navbar.html -->
   <div id="navbar"></div>
   <script src="/assets/js/loadNavbar.js"></script>
   <script src="/assets/js/navunderline.js"></script>
-  <!-- 引用 navbar.html -->
-  <section id="home">
-    <!-- makeup -->
-    <div class="gallery">
-        <a href="/makeupproj/makeup1and2.html"><img src="/pic/makeup/makeup1&2_LesFleursDuMal/makeup1_0.webp" alt="makeup1_0" loading="lazy" class="fullscreenImage"/></a>
-        <a href="/makeupproj/makeup4.html"><img src="/pic/makeup/makeup4_Chongsheng/makeup4_2.webp" alt="pic2" loading="lazy" class="fullscreenImage"/></a>
-        <a href="/makeupproj/makeup9.html"><img src="/pic/makeup/makeup9_ManchengRoom/makeup9_7.webp" alt="makeup9_7" loading="lazy" class="fullscreenImage"/></a>
-        <a href="/photoproj/photo4_1.html"><img src="/pic/photo/photo4_hannah_yellowStone/photo4_1/photo1_1.13.1.webp" alt="photo1_1.13.1" loading="lazy" class="fullscreenImage"/></a>
-        <a href="/photoproj/photo4_2.html"> <img src="/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.37.1.webp" alt="photo1_1.37.1" loading="lazy" class="fullscreenImage"/> </a>
-        <a href="/makeupproj/makeup8.html"><img src="/pic/makeup/makeup8_Genderless/makeup8_0.webp" alt="makeup8_0" loading="lazy" class="fullscreenImage"/></a>
-        <a href="/makeupproj/makeup5.html"><img src="/pic/makeup/makeup5_blueLight/makeup5_6.webp" alt="makeup5_6" loading="lazy" class="fullscreenImage"/></a>
-        <!-- <a href="/makeupproj/makeup6.html"><img src="/pic/makeup/makeup6_BlueEyeshadow/makeup6_1.webp" alt="makeup6_1" loading="lazy" class="fullscreenImage"/></a> -->
-        <!-- <a href="/makeupproj/makeup7.html"><img src="/pic/makeup/makeup7_HeshuHouse/makeup7_1.webp" alt="makeup7_1" loading="lazy" class="fullscreenImage"/></a> -->
-        <a href="/makeupproj/makeup3.html"><img src="/pic/makeup/makeup3_BlingPinkEye/makeup3_0.webp" alt="makeup3_0" loading="lazy" class="fullscreenImage"/></a>
-    </div>
-    <div class="gallery">
-      <a href="/makeupproj/hair1.html"><img src="/pic/makeup/makeup_hair_practice/makeup_hair1_1.webp" alt="pic1_1" loading="lazy" class="fullscreenImage"/></a>
-    </div>
-
-    <!-- secrets -->
-    <div class="gallery">  
-      <a href="/secretproj/secret1.html"> <img src="/pic/secret/secret1_DuskByTheSea/secret1.webp" alt="secret1" loading="lazy" class="fullscreenImage"/> </a>
-      <a href="/secretproj/secret2.html"> <img src="/pic/secret/secret2_UntilSunset/secret2.webp" alt="secret2" loading="lazy" class="fullscreenImage"/> </a>
-      <a href="/secretproj/secret3.html"> <img src="/pic/secret/secret3_SeaBreeze/secret3.webp" alt="secret3" loading="lazy" class="fullscreenImage"/> </a>
-      <a href="/secretproj/secret4.html"> <img src="/pic/secret/secret4_Grass/secret4.webp" alt="secret4" loading="lazy" class="fullscreenImage"/> </a>
-    </div>
-    <div class="gallery">  
-      <a href="/secretproj/secret6.html"> <img src="/pic/secret/secret6_Mist/secret6_5.webp" alt="secret6" loading="lazy" class="fullscreenImage"/> </a>
-      <a href="/secretproj/secret8.html"> <img src="/pic/secret/secret8_Mountain/secret8_0.webp" alt="secret8" loading="lazy" class="fullscreenImage"/> </a>
-      <a href="/secretproj/secret7.html"> <img src="/pic/secret/secret7_River/secret7.webp" alt="secret7" loading="lazy" class="fullscreenImage"/> </a>
-    </div>
-  </section>
-  <section id="films">
-    <!--     <h1>Films</h1> -->
-    <!--     <p>Here you can find a collection of my films and related projects.</p> -->
-
-    <div class="video-container">
-      <div class="video-placeholder" data-src="https://player.bilibili.com/player.html?bvid=BV1oKT8zLEyL">
-        <img src="/pic/film/film_fog.webp" alt="fog">
-      </div>
-      <div class="video-placeholder" data-src="https://player.bilibili.com/player.html?bvid=BV1SHT8zNEdj">
-        <img src="/pic/film/film_seagullAndSunset.webp" alt="seagullAndSunset">
-      </div>
-      <div class="video-placeholder" data-src="https://player.bilibili.com/player.html?bvid=BV1bx3wzYE8Z">
-        <img src="/pic/film/film_jejuSummerDreams.webp" alt="cover_seagullAndSunset">
-      </div>
-      <div class="video-placeholder" data-src="https://player.bilibili.com/player.html?bvid=BV11T3gzmEQc">
-        <img src="/pic/film/film_hairWindSunset.webp" alt="海边，微风，晚霞">
-      </div>
-      <div class="video-placeholder" data-src="https://player.bilibili.com/player.html?bvid=BV1yg3gz1EyM">
-        <img src="/pic/film/film_chongsheng.webp" alt="烟，昆虫">
-      </div>
-    </div>
-  </section>  
-  <script>
-    document.querySelectorAll('.video-placeholder').forEach(function(placeholder) {
-      placeholder.addEventListener('click', function() {
-        const src = placeholder.getAttribute('data-src');
-        const iframe = document.createElement('iframe');
-        iframe.src = src;
-        iframe.frameBorder = "0";
-        iframe.allowFullscreen = true;
-        iframe.width = "80vw";
-        iframe.style.maxWidth = "960px";
-        iframe.height = "540";
-        iframe.style.border = "2px solid red";
-        iframe.style.borderRadius = "10px";
-        iframe.style.backgroundColor = "#111";
-        placeholder.parentNode.replaceChild(iframe, placeholder);
-      });
-    });
-    </script>
-  <script src="/assets/js/menu.js"></script><!-- 引用 navbar.html -->
-  <!-- <script src="/assets/js/fullscreen.js"></script> 引入全屏功能 -->
+  <section id="home" data-gallery="home"></section>
+  <section id="films" data-videos="featured"></section>
+  <script src="/assets/js/galleryRenderer.js"></script>
+  <div id="site-footer"></div>
+  <script src="/assets/js/loadFooter.js"></script>
+  <script src="/assets/js/menu.js"></script>
 </body>
 </html>

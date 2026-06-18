@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-04-29",
+  "posts": [
+    {
+      "id": "blog250604",
+      "title": "红",
+      "date": "2025-06-04",
+      "href": "/blogs/blog250604.html",
+      "visible": true,
+      "order": 0
+    }
+  ]
+}

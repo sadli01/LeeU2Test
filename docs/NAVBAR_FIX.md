@@ -126,10 +126,10 @@ A: 检查浏览器控制台是否有 JavaScript 错误，确保：
 3. 添加错误处理和降级方案
 
 ### 长期优化
-参考 [skills.md](skills.md) 第二阶段：
-- 使用静态网站生成器（Jekyll/11ty）
-- 在构建时自动插入 navbar
-- 无需客户端 JavaScript 动态加载
+参考 [设计与资源管理优化方案](DESIGN_RESOURCE_OPTIMIZATION_PLAN.md)：
+- 继续保留统一导航入口
+- 将内容展示交给数据文件和统一渲染脚本
+- 如后续引入构建流程，可在构建时自动插入 navbar
 
 ## 文件更改列表
 

@@ -1,4 +1,29 @@
-// 动态加载导航栏
+function applySavedColorMode() {
+  const savedTheme = localStorage.getItem("leeu2-color-mode");
+  document.body.classList.toggle("dark-mode", savedTheme === "dark");
+}
+
+function setActiveNavLink() {
+  const path = window.location.pathname;
+  const navMap = [
+    { match: ["blogs", "blog"], id: "nav-blogs" },
+    { match: ["films", "film"], id: "nav-films" },
+    { match: ["secret", "secretproj"], id: "nav-secrets" },
+    { match: ["portrait", "portraitproj"], id: "nav-portrait" },
+    { match: ["photo", "photoproj"], id: "nav-photo" },
+    { match: ["contact"], id: "nav-contact" },
+    { match: ["makeup", "makeupproj"], id: "nav-makeup" },
+  ];
+
+  const active = navMap.find((item) => item.match.some((segment) => path.includes(segment)));
+  const activeId = active ? active.id : "nav-home";
+
+  document.querySelectorAll("#menu a").forEach((link) => link.classList.remove("active"));
+  document.getElementById(activeId)?.classList.add("active");
+}
+
+applySavedColorMode();
+
 function loadNavbar() {
   fetch('/navbar.html')
     .then(response => {
@@ -11,9 +36,8 @@ function loadNavbar() {
       const navbarContainer = document.getElementById('navbar');
       if (navbarContainer) {
         navbarContainer.innerHTML = html;
-        console.log('Navbar loaded successfully');
+        setActiveNavLink();
 
-        // 延迟触发事件绑定，确保 menu.js 已加载
         setTimeout(() => {
           if (typeof bindMenuEvents === 'function') {
             bindMenuEvents();

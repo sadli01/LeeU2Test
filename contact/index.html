@@ -9,31 +9,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
   <style>
-    .page-wrapper {
-      height: auto;            /* 允许内容自适应高度 */
+    body {
+      min-height: 100vh;
       display: flex;
-      flex-direction: column;  /* 垂直排列内容 */
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    .page-wrapper {
+      flex: 1;
+      min-height: calc(100vh - 50px - 76px);
+      display: flex;
       justify-content: center;
-      align-items: center;     /* 水平垂直居中 */
-      /* overflow-y: auto;       允许垂直滚动 */
-      max-height: 100vh;      /* 最大高度为视口高度 */
+      align-items: center;
     }
 
     #contact {
-      flex-grow: 1;             /* 允许占据剩余空间 */
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;      /* 内容居中 */
+      align-items: center;
       text-align: center;
-      padding: 20px;           /* 添加一些内边距 */
-      /* overflow-y: auto;        允许垂直滚动 */
+      padding: 1.5rem 1rem;
+      min-height: auto;
     }
 
     #contact img {
-      max-height: 70%;         /* 图片占contact高度的70% */
       width: auto;
       height: auto;
+      max-height: min(48vh, 520px);
       object-fit: contain;
       margin-bottom: 10px;
     }
@@ -44,31 +48,16 @@
       line-height: 1.2;
     }
 
-    footer {
-      padding: 10px;
-      text-align: center;
-      font-size: 0.9em;
-      /* border-top: 0.01px solid #ff0000; 1px 红色分割线 */
-      /* margin-top: 10px; 可选：调整分割线与内容的间距 */
-    }
-
     .contact-icon img {
       width: 18px;
       height: 18px;
       vertical-align: middle;
     }
 
-    .contact-email {
-      margin-top: 5px;
-      font-size: 0.6em;  /* 比正文更小 */
-      font-style: italic;   
-      color: #555;        /* 可选：更低调的灰色 */
-    }
-
     .poem-container {
       max-width: 700px;
-      margin: 2em auto;
-      padding: 2em;
+      margin: 1rem auto;
+      padding: 0.5rem 1rem;
       font-size: 0.9em;
       line-height: 2.1;
       white-space: pre-line;
@@ -82,7 +71,7 @@
     .contact-gallery {
       width: 80%;
       max-width: 600px;
-      margin: 2rem auto;
+      margin: 1rem auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -93,21 +82,33 @@
       width: 100%;
       height: auto;
       max-width: 100%;
-      border: 2px solid red;
-      border-radius: 8px;
+      border: 0;
+      border-radius: 0;
       transition: transform 0.3s ease;
       cursor: pointer;
     }
 
     .contact-gallery img:hover {
       transform: scale(1.02);
-      border-color: white;
     }
 
     /* 响应式适配 */
     @media (max-width: 768px) {
+      .page-wrapper {
+        min-height: auto;
+      }
+
+      #contact {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
       .contact-gallery {
         width: 90%;
+      }
+
+      #contact img {
+        max-height: none;
       }
     }
   </style>
@@ -127,8 +128,7 @@
 
         
         2000 *天秤 *INTP-A *女生 *杭州 
-        数据挖掘工程师。
-        妆发&摄影，随缘创作，喜欢的都想尝试。
+        妆发 & 摄影 & 数据挖掘工程师。
         喜欢音乐、电影、摄影、徒步、运动、滑板、手工...
         Feel free to reach out to me via email or social media.
         希望能结识兴趣相投的朋友。
@@ -140,17 +140,8 @@
       </div>
     </section>
   </div>
-  <!-- Footer -->
-  <hr class="custom-divider">
-  <footer>
-    <!-- <a href="https://www.xiaohongshu.com/user/profile/67ef5314000000000e01dfcc?xsec_token=YBj5ROXv1Ew1tkY08QdKiZD609r7qyX6tIQUSPcgLg-10=&xsec_source=app_share&xhsshare=CopyLink&appuid=63543ef5000000001901c58c&apptime=1749091534&share_id=0d4eefc37ead44fc82ecc59c01d1d3e6"
-      target="_blank" class="contact-icon">
-      <img src="pic/icon_redbook.svg" alt="小红书">
-    </a> -->
-    <div class="contact-email">email - liyu01ls1018@gmail.com</div>
-    <div class="contact-email">wechat - LY404u *注明来意*</div>
-  </footer>
+  <div id="site-footer"></div>
+  <script src="/assets/js/loadFooter.js"></script>
   <script src="/assets/js/menu.js"></script>
-<!--   <script src="/assets/js/fullscreen.js"></script> <!-- 引入全屏功能 --> -->
 </body>
 </html>
