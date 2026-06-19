@@ -4,7 +4,12 @@ function applyColorMode(mode) {
     document.body.classList.toggle("dark-mode", isDark);
 
     if (themeToggle) {
-      themeToggle.querySelector("span").textContent = isDark ? "☾︎" : "☀︎";
+      const icon = themeToggle.querySelector(".theme-toggle-icon");
+      if (icon) {
+        icon.innerHTML = isDark
+          ? '<path d="M20.5 14.2A8.2 8.2 0 0 1 9.8 3.5a8.7 8.7 0 1 0 10.7 10.7Z"/>'
+          : '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/>';
+      }
       themeToggle.setAttribute("aria-label", isDark ? "Switch to day mode" : "Switch to night mode");
       themeToggle.setAttribute("title", isDark ? "Day mode" : "Night mode");
     }
