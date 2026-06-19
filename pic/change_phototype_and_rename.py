@@ -11,12 +11,12 @@ except ImportError:
     print("警告: pillow-heif 未安装，HEIC 格式将无法处理。请运行: pip install pillow-heif")
 
 # # 指定目录
-# input_dir = 'pic/photo/photo4_hannah_yellowStone/'
-# output_dir = 'pic/photo/photo4_hannah_yellowStone/'
-input_dir = '/Users/yuli/code_proj/code/LeeU2/LeeU2Test/pic/portrait/XCRJ'
+# input_dir = 'pic/photo/hannah_yellowStone/'
+# output_dir = 'pic/photo/hannah_yellowStone/'
+input_dir = '/Users/yuli/code_proj/code/LeeU2/LeeU2Test/pic/secret/Mist'
 output_dir = input_dir
 
-proj_name = 'portrait_'
+proj_name = 'secret'+'_'
 
 for filename in os.listdir(input_dir):
     filename_lower = filename.lower()

@@ -4,7 +4,7 @@ function applyColorMode(mode) {
     document.body.classList.toggle("dark-mode", isDark);
 
     if (themeToggle) {
-      themeToggle.querySelector("span").textContent = isDark ? "☾" : "☀";
+      themeToggle.querySelector("span").textContent = isDark ? "☾︎" : "☀︎";
       themeToggle.setAttribute("aria-label", isDark ? "Switch to day mode" : "Switch to night mode");
       themeToggle.setAttribute("title", isDark ? "Day mode" : "Night mode");
     }

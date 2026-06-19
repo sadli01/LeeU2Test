@@ -120,7 +120,7 @@ function detailPageHtml(title, projectId) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LeeU2 - ${title}</title>
+  <title></title>
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -169,7 +169,7 @@ function createProjectForMediaDir(projects, category, mediaDir) {
   const slug = slugify(dirName) || `${category}-project`;
   const id = uniqueProjectId(projects, `${category}-${slug}`);
   const title = titleFromDirName(dirName, category);
-  const page = `/${categoryConfig[category].pageDir}/${slug}.html`;
+  const page = `/${categoryConfig[category].pageDir}/${slug}/`;
   const images = listImageFiles(mediaDir).map((src, order) => {
     const meta = readImageMeta(src);
     return {
@@ -204,7 +204,7 @@ function createProjectForMediaDir(projects, category, mediaDir) {
 }
 
 function writeDetailPage(project) {
-  const pagePath = sitePathToFull(project.page);
+  const pagePath = sitePathToFull(`${project.page.replace(/\/?$/, "/")}index.html`);
   if (fs.existsSync(pagePath)) return false;
 
   fs.mkdirSync(path.dirname(pagePath), { recursive: true });
@@ -285,7 +285,9 @@ const createdPageSummaries = createdProjects.map((project) => ({
   page: project.page,
   mediaDir: project.mediaDir,
   images: project.images.length,
-  pageCreated: dryRun ? !fs.existsSync(sitePathToFull(project.page)) : writeDetailPage(project),
+  pageCreated: dryRun
+    ? !fs.existsSync(sitePathToFull(`${project.page.replace(/\/?$/, "/")}index.html`))
+    : writeDetailPage(project),
 }));
 
 if (!dryRun && (summaries.length || createdProjects.length)) {

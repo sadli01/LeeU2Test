@@ -69,7 +69,11 @@ section {
 }
 
 .theme-toggle span {
+  display: block;
   color: inherit !important;
+  font-family: Arial, "Helvetica Neue", sans-serif !important;
+  font-variant-emoji: text;
+  -webkit-text-fill-color: currentColor;
 }
 
 

@@ -224,7 +224,7 @@ node scripts/sync-project-media.js --project=portrait-hiking
 也可以按图片目录同步：
 
 ```bash
-node scripts/sync-project-media.js --media-dir=/pic/secret/secret8_Mountain
+node scripts/sync-project-media.js --media-dir=/pic/secret/Mountain
 ```
 
 自动创建新作品文件夹对应的项目和子页面：
