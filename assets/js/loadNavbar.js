@@ -6,13 +6,14 @@ function applySavedColorMode() {
 function setActiveNavLink() {
   const path = window.location.pathname;
   const navMap = [
-    { match: ["blogs", "blog"], id: "nav-blogs" },
-    { match: ["films", "film"], id: "nav-films" },
+    { match: ["blog"], id: "nav-blogs" },
+    { match: ["video", "films", "film"], id: "nav-films" },
     { match: ["secret", "secretproj"], id: "nav-secrets" },
     { match: ["portrait", "portraitproj"], id: "nav-portrait" },
     { match: ["photo", "photoproj"], id: "nav-photo" },
     { match: ["contact"], id: "nav-contact" },
     { match: ["makeup", "makeupproj"], id: "nav-makeup" },
+    { match: ["home"], id: "nav-home" },
   ];
 
   const active = navMap.find((item) => item.match.some((segment) => path.includes(segment)));

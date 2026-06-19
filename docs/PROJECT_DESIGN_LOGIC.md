@@ -151,7 +151,7 @@ pic/
 <section id="home">
   <div class="gallery">
     <a href="/photoproj/photo9.html">
-      <img src="/pic/photo/photo9_manchengRoom/photo9_0.webp" alt="photo9" loading="lazy" class="fullscreenImage"/>
+      <img src="/pic/photo/manchengRoom/photo9_0.webp" alt="photo9" loading="lazy" class="fullscreenImage"/>
     </a>
   </div>
 </section>
@@ -178,8 +178,8 @@ pic/
 ```html
 <section id="home">
   <div class="gallery">
-    <img src="../pic/photo/photo9_manchengRoom/photo9_0.webp" alt="photo9_0" loading="lazy" class="fullscreenImage"/>
-    <img src="../pic/photo/photo9_manchengRoom/photo9_1.webp" alt="photo9_1" loading="lazy" class="fullscreenImage"/>
+    <img src="../pic/photo/manchengRoom/photo9_0.webp" alt="photo9_0" loading="lazy" class="fullscreenImage"/>
+    <img src="../pic/photo/manchengRoom/photo9_1.webp" alt="photo9_1" loading="lazy" class="fullscreenImage"/>
   </div>
 </section>
 ```
@@ -281,9 +281,9 @@ secretproj/
 示例：
 
 ```text
-pic/makeup/makeup4_Chongsheng/
-pic/makeup/makeup9_ManchengRoom/
-pic/photo/photo9_manchengRoom/
+pic/makeup/Chongsheng/
+pic/makeup/ManchengRoom/
+pic/photo/manchengRoom/
 pic/secret/secret8_Mountain/
 ```
 
@@ -546,7 +546,7 @@ body {
 
 1. 图片目录英文描述大小写不完全统一。
 
-   示例：`makeup9_ManchengRoom` 与 `photo9_manchengRoom`。
+   示例：`ManchengRoom` 与 `manchengRoom`。
 
 2. 部分图片文件保留原始复杂编号。
 

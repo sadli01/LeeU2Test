@@ -28,9 +28,9 @@
       "id": "makeup1and2",
       "title": "Les Fleurs Du Mal",
       "category": "makeup",
-      "page": "/makeupproj/makeup1and2.html",
-      "mediaDir": "/pic/makeup/makeup1&2_LesFleursDuMal",
-      "cover": "/pic/makeup/makeup1&2_LesFleursDuMal/makeup1_0.webp",
+      "page": "/makeupproj/makeup1and2/",
+      "mediaDir": "/pic/makeup/LesFleursDuMal",
+      "cover": "/pic/makeup/LesFleursDuMal/makeup1_0.webp",
       "visible": true,
       "showInCategory": true,
       "featured": true,
@@ -39,7 +39,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/makeup/makeup1&2_LesFleursDuMal/makeup2_0.webp",
+          "src": "/pic/makeup/LesFleursDuMal/makeup2_0.webp",
           "alt": "makeup2_0",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -47,7 +47,7 @@
           "order": 0
         },
         {
-          "src": "/pic/makeup/makeup1&2_LesFleursDuMal/makeup2_2.webp",
+          "src": "/pic/makeup/LesFleursDuMal/makeup2_2.webp",
           "alt": "makeup2_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -55,7 +55,7 @@
           "order": 1
         },
         {
-          "src": "/pic/makeup/makeup1&2_LesFleursDuMal/makeup2_3.webp",
+          "src": "/pic/makeup/LesFleursDuMal/makeup2_3.webp",
           "alt": "makeup2_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -63,7 +63,7 @@
           "order": 2
         },
         {
-          "src": "/pic/makeup/makeup1&2_LesFleursDuMal/makeup1_0.webp",
+          "src": "/pic/makeup/LesFleursDuMal/makeup1_0.webp",
           "alt": "makeup1_0",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -71,7 +71,7 @@
           "order": 3
         },
         {
-          "src": "/pic/makeup/makeup1&2_LesFleursDuMal/makeup1_3.webp",
+          "src": "/pic/makeup/LesFleursDuMal/makeup1_3.webp",
           "alt": "makeup1_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -79,7 +79,7 @@
           "order": 4
         },
         {
-          "src": "/pic/makeup/makeup1&2_LesFleursDuMal/makeup1_2.webp",
+          "src": "/pic/makeup/LesFleursDuMal/makeup1_2.webp",
           "alt": "makeup1_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -87,7 +87,7 @@
           "order": 5
         },
         {
-          "src": "/pic/makeup/makeup1&2_LesFleursDuMal/makeup2_1.webp",
+          "src": "/pic/makeup/LesFleursDuMal/makeup2_1.webp",
           "alt": "makeup2_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -102,9 +102,9 @@
       "id": "makeup4",
       "title": "Chongsheng",
       "category": "makeup",
-      "page": "/makeupproj/makeup4.html",
-      "mediaDir": "/pic/makeup/makeup4_Chongsheng",
-      "cover": "/pic/makeup/makeup4_Chongsheng/makeup4_2.webp",
+      "page": "/makeupproj/makeup4/",
+      "mediaDir": "/pic/makeup/Chongsheng",
+      "cover": "/pic/makeup/Chongsheng/makeup4_2.webp",
       "visible": true,
       "showInCategory": true,
       "featured": true,
@@ -113,7 +113,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/makeup/makeup4_Chongsheng/makeup4_0.webp",
+          "src": "/pic/makeup/Chongsheng/makeup4_0.webp",
           "alt": "makeup4_0",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -121,7 +121,7 @@
           "order": 0
         },
         {
-          "src": "/pic/makeup/makeup4_Chongsheng/makeup4_1.webp",
+          "src": "/pic/makeup/Chongsheng/makeup4_1.webp",
           "alt": "makeup4_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -129,7 +129,7 @@
           "order": 1
         },
         {
-          "src": "/pic/makeup/makeup4_Chongsheng/makeup4_2.webp",
+          "src": "/pic/makeup/Chongsheng/makeup4_2.webp",
           "alt": "makeup4_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -137,7 +137,7 @@
           "order": 2
         },
         {
-          "src": "/pic/makeup/makeup4_Chongsheng/makeup4_11.webp",
+          "src": "/pic/makeup/Chongsheng/makeup4_11.webp",
           "alt": "makeup4_11",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -145,7 +145,7 @@
           "order": 3
         },
         {
-          "src": "/pic/makeup/makeup4_Chongsheng/makeup4_6.webp",
+          "src": "/pic/makeup/Chongsheng/makeup4_6.webp",
           "alt": "makeup4_6",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -153,7 +153,7 @@
           "order": 4
         },
         {
-          "src": "/pic/makeup/makeup4_Chongsheng/makeup4_4.webp",
+          "src": "/pic/makeup/Chongsheng/makeup4_4.webp",
           "alt": "makeup4_4",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -161,7 +161,7 @@
           "order": 5
         },
         {
-          "src": "/pic/makeup/makeup4_Chongsheng/makeup4_7.webp",
+          "src": "/pic/makeup/Chongsheng/makeup4_7.webp",
           "alt": "makeup4_7",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -169,7 +169,7 @@
           "order": 6
         },
         {
-          "src": "/pic/makeup/makeup4_Chongsheng/makeup4_8.webp",
+          "src": "/pic/makeup/Chongsheng/makeup4_8.webp",
           "alt": "makeup4_8",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -177,7 +177,7 @@
           "order": 7
         },
         {
-          "src": "/pic/makeup/makeup4_Chongsheng/makeup4_3.webp",
+          "src": "/pic/makeup/Chongsheng/makeup4_3.webp",
           "alt": "makeup4_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -185,7 +185,7 @@
           "order": 8
         },
         {
-          "src": "/pic/makeup/makeup4_Chongsheng/makeup4_5.webp",
+          "src": "/pic/makeup/Chongsheng/makeup4_5.webp",
           "alt": "makeup4_5",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -193,7 +193,7 @@
           "order": 9
         },
         {
-          "src": "/pic/makeup/makeup4_Chongsheng/makeup4_9.webp",
+          "src": "/pic/makeup/Chongsheng/makeup4_9.webp",
           "alt": "makeup4_9",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -201,7 +201,7 @@
           "order": 10
         },
         {
-          "src": "/pic/makeup/makeup4_Chongsheng/makeup4_10.webp",
+          "src": "/pic/makeup/Chongsheng/makeup4_10.webp",
           "alt": "makeup4_10",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -216,9 +216,9 @@
       "id": "makeup9",
       "title": "Mancheng Room",
       "category": "makeup",
-      "page": "/makeupproj/makeup9.html",
-      "mediaDir": "/pic/makeup/makeup9_ManchengRoom",
-      "cover": "/pic/makeup/makeup9_ManchengRoom/makeup9_7.webp",
+      "page": "/makeupproj/makeup9/",
+      "mediaDir": "/pic/makeup/ManchengRoom",
+      "cover": "/pic/makeup/ManchengRoom/makeup9_7.webp",
       "visible": true,
       "showInCategory": true,
       "featured": true,
@@ -227,7 +227,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/makeup/makeup9_ManchengRoom/makeup9_0.webp",
+          "src": "/pic/makeup/ManchengRoom/makeup9_0.webp",
           "alt": "makeup9_0",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -235,7 +235,7 @@
           "order": 0
         },
         {
-          "src": "/pic/makeup/makeup9_ManchengRoom/makeup9_1.webp",
+          "src": "/pic/makeup/ManchengRoom/makeup9_1.webp",
           "alt": "makeup9_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -243,7 +243,7 @@
           "order": 1
         },
         {
-          "src": "/pic/makeup/makeup9_ManchengRoom/makeup9_2.webp",
+          "src": "/pic/makeup/ManchengRoom/makeup9_2.webp",
           "alt": "makeup9_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -251,7 +251,7 @@
           "order": 2
         },
         {
-          "src": "/pic/makeup/makeup9_ManchengRoom/makeup9_3.webp",
+          "src": "/pic/makeup/ManchengRoom/makeup9_3.webp",
           "alt": "makeup9_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -259,7 +259,7 @@
           "order": 3
         },
         {
-          "src": "/pic/makeup/makeup9_ManchengRoom/makeup9_4.webp",
+          "src": "/pic/makeup/ManchengRoom/makeup9_4.webp",
           "alt": "makeup9_4",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -267,7 +267,7 @@
           "order": 4
         },
         {
-          "src": "/pic/makeup/makeup9_ManchengRoom/makeup9_5.webp",
+          "src": "/pic/makeup/ManchengRoom/makeup9_5.webp",
           "alt": "makeup9_5",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -275,7 +275,7 @@
           "order": 5
         },
         {
-          "src": "/pic/makeup/makeup9_ManchengRoom/makeup9_6.webp",
+          "src": "/pic/makeup/ManchengRoom/makeup9_6.webp",
           "alt": "makeup9_6",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -283,7 +283,7 @@
           "order": 6
         },
         {
-          "src": "/pic/makeup/makeup9_ManchengRoom/makeup9_7.webp",
+          "src": "/pic/makeup/ManchengRoom/makeup9_7.webp",
           "alt": "makeup9_7",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -291,7 +291,7 @@
           "order": 7
         },
         {
-          "src": "/pic/makeup/makeup9_ManchengRoom/makeup9_8.webp",
+          "src": "/pic/makeup/ManchengRoom/makeup9_8.webp",
           "alt": "makeup9_8",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -299,7 +299,7 @@
           "order": 8
         },
         {
-          "src": "/pic/makeup/makeup9_ManchengRoom/makeup9_9.webp",
+          "src": "/pic/makeup/ManchengRoom/makeup9_9.webp",
           "alt": "makeup9_9",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -314,9 +314,9 @@
       "id": "makeup8",
       "title": "Genderless",
       "category": "makeup",
-      "page": "/makeupproj/makeup8.html",
-      "mediaDir": "/pic/makeup/makeup8_Genderless",
-      "cover": "/pic/makeup/makeup8_Genderless/makeup8_0.webp",
+      "page": "/makeupproj/makeup8/",
+      "mediaDir": "/pic/makeup/Genderless",
+      "cover": "/pic/makeup/Genderless/makeup8_0.webp",
       "visible": true,
       "showInCategory": true,
       "featured": true,
@@ -325,7 +325,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/makeup/makeup8_Genderless/makeup8_0.webp",
+          "src": "/pic/makeup/Genderless/makeup8_0.webp",
           "alt": "makeup8_0",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -333,7 +333,7 @@
           "order": 0
         },
         {
-          "src": "/pic/makeup/makeup8_Genderless/makeup8_1.webp",
+          "src": "/pic/makeup/Genderless/makeup8_1.webp",
           "alt": "makeup8_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -341,7 +341,7 @@
           "order": 1
         },
         {
-          "src": "/pic/makeup/makeup8_Genderless/makeup8_2.webp",
+          "src": "/pic/makeup/Genderless/makeup8_2.webp",
           "alt": "makeup8_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -349,7 +349,7 @@
           "order": 2
         },
         {
-          "src": "/pic/makeup/makeup8_Genderless/makeup8_3_1.webp",
+          "src": "/pic/makeup/Genderless/makeup8_3_1.webp",
           "alt": "makeup8_3_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -357,7 +357,7 @@
           "order": 3
         },
         {
-          "src": "/pic/makeup/makeup8_Genderless/makeup8_3_2.webp",
+          "src": "/pic/makeup/Genderless/makeup8_3_2.webp",
           "alt": "makeup8_3_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -365,7 +365,7 @@
           "order": 4
         },
         {
-          "src": "/pic/makeup/makeup8_Genderless/makeup8_4.webp",
+          "src": "/pic/makeup/Genderless/makeup8_4.webp",
           "alt": "makeup8_4",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -373,7 +373,7 @@
           "order": 5
         },
         {
-          "src": "/pic/makeup/makeup8_Genderless/makeup8_5.webp",
+          "src": "/pic/makeup/Genderless/makeup8_5.webp",
           "alt": "makeup8_5",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -381,7 +381,7 @@
           "order": 6
         },
         {
-          "src": "/pic/makeup/makeup8_Genderless/makeup8_6.webp",
+          "src": "/pic/makeup/Genderless/makeup8_6.webp",
           "alt": "makeup8_6",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -389,7 +389,7 @@
           "order": 7
         },
         {
-          "src": "/pic/makeup/makeup8_Genderless/makeup8_8_1.webp",
+          "src": "/pic/makeup/Genderless/makeup8_8_1.webp",
           "alt": "makeup8_8_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -397,7 +397,7 @@
           "order": 8
         },
         {
-          "src": "/pic/makeup/makeup8_Genderless/makeup8_8_2.webp",
+          "src": "/pic/makeup/Genderless/makeup8_8_2.webp",
           "alt": "makeup8_8_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -405,7 +405,7 @@
           "order": 9
         },
         {
-          "src": "/pic/makeup/makeup8_Genderless/makeup8_8_3.webp",
+          "src": "/pic/makeup/Genderless/makeup8_8_3.webp",
           "alt": "makeup8_8_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -413,7 +413,7 @@
           "order": 10
         },
         {
-          "src": "/pic/makeup/makeup8_Genderless/makeup8_8_4.webp",
+          "src": "/pic/makeup/Genderless/makeup8_8_4.webp",
           "alt": "makeup8_8_4",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -421,7 +421,7 @@
           "order": 11
         },
         {
-          "src": "/pic/makeup/makeup8_Genderless/makeup8_7.webp",
+          "src": "/pic/makeup/Genderless/makeup8_7.webp",
           "alt": "makeup8_7",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -436,9 +436,9 @@
       "id": "makeup5",
       "title": "Blue Light",
       "category": "makeup",
-      "page": "/makeupproj/makeup5.html",
-      "mediaDir": "/pic/makeup/makeup5_blueLight",
-      "cover": "/pic/makeup/makeup5_blueLight/makeup5_6.webp",
+      "page": "/makeupproj/makeup5/",
+      "mediaDir": "/pic/makeup/blueLight",
+      "cover": "/pic/makeup/blueLight/makeup5_6.webp",
       "visible": true,
       "showInCategory": true,
       "featured": true,
@@ -447,7 +447,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/makeup/makeup5_blueLight/makeup5_1.webp",
+          "src": "/pic/makeup/blueLight/makeup5_1.webp",
           "alt": "makeup5_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -455,7 +455,7 @@
           "order": 0
         },
         {
-          "src": "/pic/makeup/makeup5_blueLight/makeup5_2.webp",
+          "src": "/pic/makeup/blueLight/makeup5_2.webp",
           "alt": "makeup5_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -463,7 +463,7 @@
           "order": 1
         },
         {
-          "src": "/pic/makeup/makeup5_blueLight/makeup5_3.webp",
+          "src": "/pic/makeup/blueLight/makeup5_3.webp",
           "alt": "makeup5_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -471,7 +471,7 @@
           "order": 2
         },
         {
-          "src": "/pic/makeup/makeup5_blueLight/makeup5_4.webp",
+          "src": "/pic/makeup/blueLight/makeup5_4.webp",
           "alt": "makeup5_4",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -479,7 +479,7 @@
           "order": 3
         },
         {
-          "src": "/pic/makeup/makeup5_blueLight/makeup5_5.webp",
+          "src": "/pic/makeup/blueLight/makeup5_5.webp",
           "alt": "makeup5_5",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -487,7 +487,7 @@
           "order": 4
         },
         {
-          "src": "/pic/makeup/makeup5_blueLight/makeup5_6.webp",
+          "src": "/pic/makeup/blueLight/makeup5_6.webp",
           "alt": "makeup5_6",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -495,7 +495,7 @@
           "order": 5
         },
         {
-          "src": "/pic/makeup/makeup5_blueLight/makeup5_7.webp",
+          "src": "/pic/makeup/blueLight/makeup5_7.webp",
           "alt": "makeup5_7",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -503,7 +503,7 @@
           "order": 6
         },
         {
-          "src": "/pic/makeup/makeup5_blueLight/makeup5_8.webp",
+          "src": "/pic/makeup/blueLight/makeup5_8.webp",
           "alt": "makeup5_8",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -518,9 +518,9 @@
       "id": "makeup6",
       "title": "Blue Eyeshadow",
       "category": "makeup",
-      "page": "/makeupproj/makeup6.html",
-      "mediaDir": "/pic/makeup/makeup6_BlueEyeshadow",
-      "cover": "/pic/makeup/makeup6_BlueEyeshadow/makeup6_1.webp",
+      "page": "/makeupproj/makeup6/",
+      "mediaDir": "/pic/makeup/BlueEyeshadow",
+      "cover": "/pic/makeup/BlueEyeshadow/makeup6_1.webp",
       "visible": true,
       "showInCategory": true,
       "featured": false,
@@ -529,7 +529,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/makeup/makeup6_BlueEyeshadow/makeup6_1.webp",
+          "src": "/pic/makeup/BlueEyeshadow/makeup6_1.webp",
           "alt": "makeup6_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -537,7 +537,7 @@
           "order": 0
         },
         {
-          "src": "/pic/makeup/makeup6_BlueEyeshadow/makeup6_2.webp",
+          "src": "/pic/makeup/BlueEyeshadow/makeup6_2.webp",
           "alt": "makeup6_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -545,7 +545,7 @@
           "order": 1
         },
         {
-          "src": "/pic/makeup/makeup6_BlueEyeshadow/makeup6_3.webp",
+          "src": "/pic/makeup/BlueEyeshadow/makeup6_3.webp",
           "alt": "makeup6_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -560,9 +560,9 @@
       "id": "makeup7",
       "title": "Heshu House",
       "category": "makeup",
-      "page": "/makeupproj/makeup7.html",
-      "mediaDir": "/pic/makeup/makeup7_HeshuHouse",
-      "cover": "/pic/makeup/makeup7_HeshuHouse/makeup7_3.webp",
+      "page": "/makeupproj/makeup7/",
+      "mediaDir": "/pic/makeup/HeshuHouse",
+      "cover": "/pic/makeup/HeshuHouse/makeup7_3.webp",
       "visible": true,
       "showInCategory": true,
       "featured": false,
@@ -571,7 +571,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/makeup/makeup7_HeshuHouse/makeup7_1.webp",
+          "src": "/pic/makeup/HeshuHouse/makeup7_1.webp",
           "alt": "makeup7_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -579,7 +579,7 @@
           "order": 0
         },
         {
-          "src": "/pic/makeup/makeup7_HeshuHouse/makeup7_2.webp",
+          "src": "/pic/makeup/HeshuHouse/makeup7_2.webp",
           "alt": "makeup7_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -587,7 +587,7 @@
           "order": 1
         },
         {
-          "src": "/pic/makeup/makeup7_HeshuHouse/makeup7_3.webp",
+          "src": "/pic/makeup/HeshuHouse/makeup7_3.webp",
           "alt": "makeup7_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -595,7 +595,7 @@
           "order": 2
         },
         {
-          "src": "/pic/makeup/makeup7_HeshuHouse/makeup7_4.webp",
+          "src": "/pic/makeup/HeshuHouse/makeup7_4.webp",
           "alt": "makeup7_4",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -603,7 +603,7 @@
           "order": 3
         },
         {
-          "src": "/pic/makeup/makeup7_HeshuHouse/makeup7_5.webp",
+          "src": "/pic/makeup/HeshuHouse/makeup7_5.webp",
           "alt": "makeup7_5",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -611,7 +611,7 @@
           "order": 4
         },
         {
-          "src": "/pic/makeup/makeup7_HeshuHouse/makeup7_7.webp",
+          "src": "/pic/makeup/HeshuHouse/makeup7_7.webp",
           "alt": "makeup7_7",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -619,7 +619,7 @@
           "order": 5
         },
         {
-          "src": "/pic/makeup/makeup7_HeshuHouse/makeup7_6.webp",
+          "src": "/pic/makeup/HeshuHouse/makeup7_6.webp",
           "alt": "makeup7_6",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -627,7 +627,7 @@
           "order": 6
         },
         {
-          "src": "/pic/makeup/makeup7_HeshuHouse/makeup7_8.webp",
+          "src": "/pic/makeup/HeshuHouse/makeup7_8.webp",
           "alt": "makeup7_8",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -642,9 +642,9 @@
       "id": "makeup3",
       "title": "Bling Pink Eye",
       "category": "makeup",
-      "page": "/makeupproj/makeup3.html",
-      "mediaDir": "/pic/makeup/makeup3_BlingPinkEye",
-      "cover": "/pic/makeup/makeup3_BlingPinkEye/makeup3_0.webp",
+      "page": "/makeupproj/makeup3/",
+      "mediaDir": "/pic/makeup/BlingPinkEye",
+      "cover": "/pic/makeup/BlingPinkEye/makeup3_0.webp",
       "visible": true,
       "showInCategory": true,
       "featured": false,
@@ -653,7 +653,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/makeup/makeup3_BlingPinkEye/makeup3_0.webp",
+          "src": "/pic/makeup/BlingPinkEye/makeup3_0.webp",
           "alt": "makeup3_0",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -661,7 +661,7 @@
           "order": 0
         },
         {
-          "src": "/pic/makeup/makeup3_BlingPinkEye/makeup3_1.webp",
+          "src": "/pic/makeup/BlingPinkEye/makeup3_1.webp",
           "alt": "makeup3_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -669,7 +669,7 @@
           "order": 1
         },
         {
-          "src": "/pic/makeup/makeup3_BlingPinkEye/makeup3_2.webp",
+          "src": "/pic/makeup/BlingPinkEye/makeup3_2.webp",
           "alt": "makeup3_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -677,7 +677,7 @@
           "order": 2
         },
         {
-          "src": "/pic/makeup/makeup3_BlingPinkEye/makeup3_3.webp",
+          "src": "/pic/makeup/BlingPinkEye/makeup3_3.webp",
           "alt": "makeup3_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -692,9 +692,9 @@
       "id": "hair1",
       "title": "Hair Practice",
       "category": "makeup",
-      "page": "/makeupproj/hair1.html",
-      "mediaDir": "/pic/makeup/makeup_hair_practice",
-      "cover": "/pic/makeup/makeup_hair_practice/makeup_hair1_1.webp",
+      "page": "/makeupproj/hair1/",
+      "mediaDir": "/pic/makeup/hair_practice",
+      "cover": "/pic/makeup/hair_practice/makeup_hair1_1.webp",
       "visible": true,
       "showInCategory": true,
       "featured": false,
@@ -703,7 +703,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/makeup/makeup_hair_practice/makeup_hair1_0.webp",
+          "src": "/pic/makeup/hair_practice/makeup_hair1_0.webp",
           "alt": "makeup_hair1_0",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -711,7 +711,7 @@
           "order": 0
         },
         {
-          "src": "/pic/makeup/makeup_hair_practice/makeup_hair1_1.webp",
+          "src": "/pic/makeup/hair_practice/makeup_hair1_1.webp",
           "alt": "makeup_hair1_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -719,7 +719,7 @@
           "order": 1
         },
         {
-          "src": "/pic/makeup/makeup_hair_practice/makeup_hair2_0.webp",
+          "src": "/pic/makeup/hair_practice/makeup_hair2_0.webp",
           "alt": "makeup_hair2_0",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -727,7 +727,7 @@
           "order": 2
         },
         {
-          "src": "/pic/makeup/makeup_hair_practice/makeup_hair2_1.webp",
+          "src": "/pic/makeup/hair_practice/makeup_hair2_1.webp",
           "alt": "makeup_hair2_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -735,7 +735,7 @@
           "order": 3
         },
         {
-          "src": "/pic/makeup/makeup_hair_practice/makeup_hair3_0.webp",
+          "src": "/pic/makeup/hair_practice/makeup_hair3_0.webp",
           "alt": "makeup_hair3_0",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -743,7 +743,7 @@
           "order": 4
         },
         {
-          "src": "/pic/makeup/makeup_hair_practice/makeup_hair3_1.webp",
+          "src": "/pic/makeup/hair_practice/makeup_hair3_1.webp",
           "alt": "makeup_hair3_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -751,7 +751,7 @@
           "order": 5
         },
         {
-          "src": "/pic/makeup/makeup_hair_practice/makeup_hair3_2.webp",
+          "src": "/pic/makeup/hair_practice/makeup_hair3_2.webp",
           "alt": "makeup_hair3_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -759,7 +759,7 @@
           "order": 6
         },
         {
-          "src": "/pic/makeup/makeup_hair_practice/makeup_hair3_3.webp",
+          "src": "/pic/makeup/hair_practice/makeup_hair3_3.webp",
           "alt": "makeup_hair3_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -767,7 +767,7 @@
           "order": 7
         },
         {
-          "src": "/pic/makeup/makeup_hair_practice/makeup_hair2_3.webp",
+          "src": "/pic/makeup/hair_practice/makeup_hair2_3.webp",
           "alt": "makeup_hair2_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -782,9 +782,9 @@
       "id": "photo9",
       "title": "Mancheng Room",
       "category": "photo",
-      "page": "/photoproj/photo9.html",
-      "mediaDir": "/pic/photo/photo9_manchengRoom",
-      "cover": "/pic/photo/photo9_manchengRoom/photo9_0.webp",
+      "page": "/photoproj/photo9/",
+      "mediaDir": "/pic/photo/manchengRoom",
+      "cover": "/pic/photo/manchengRoom/photo9_0.webp",
       "visible": true,
       "showInCategory": true,
       "featured": false,
@@ -793,7 +793,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/photo/photo9_manchengRoom/photo9_0.webp",
+          "src": "/pic/photo/manchengRoom/photo9_0.webp",
           "alt": "photo9_0",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -801,7 +801,7 @@
           "order": 0
         },
         {
-          "src": "/pic/photo/photo9_manchengRoom/photo9_1.webp",
+          "src": "/pic/photo/manchengRoom/photo9_1.webp",
           "alt": "photo9_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -809,7 +809,7 @@
           "order": 1
         },
         {
-          "src": "/pic/photo/photo9_manchengRoom/photo9_2.webp",
+          "src": "/pic/photo/manchengRoom/photo9_2.webp",
           "alt": "photo9_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -817,7 +817,7 @@
           "order": 2
         },
         {
-          "src": "/pic/photo/photo9_manchengRoom/photo9_3.webp",
+          "src": "/pic/photo/manchengRoom/photo9_3.webp",
           "alt": "photo9_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -825,7 +825,7 @@
           "order": 3
         },
         {
-          "src": "/pic/photo/photo9_manchengRoom/photo9_4.webp",
+          "src": "/pic/photo/manchengRoom/photo9_4.webp",
           "alt": "photo9_4",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -833,7 +833,7 @@
           "order": 4
         },
         {
-          "src": "/pic/photo/photo9_manchengRoom/photo9_5.webp",
+          "src": "/pic/photo/manchengRoom/photo9_5.webp",
           "alt": "photo9_5",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -841,7 +841,7 @@
           "order": 5
         },
         {
-          "src": "/pic/photo/photo9_manchengRoom/photo9_6.webp",
+          "src": "/pic/photo/manchengRoom/photo9_6.webp",
           "alt": "photo9_6",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -849,7 +849,7 @@
           "order": 6
         },
         {
-          "src": "/pic/photo/photo9_manchengRoom/photo9_7.webp",
+          "src": "/pic/photo/manchengRoom/photo9_7.webp",
           "alt": "photo9_7",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -857,7 +857,7 @@
           "order": 7
         },
         {
-          "src": "/pic/photo/photo9_manchengRoom/photo9_8.webp",
+          "src": "/pic/photo/manchengRoom/photo9_8.webp",
           "alt": "photo9_8",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -865,7 +865,7 @@
           "order": 8
         },
         {
-          "src": "/pic/photo/photo9_manchengRoom/photo9_9.webp",
+          "src": "/pic/photo/manchengRoom/photo9_9.webp",
           "alt": "photo9_9",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -880,9 +880,9 @@
       "id": "photo4_1",
       "title": "Yellow Stone 1",
       "category": "photo",
-      "page": "/photoproj/photo4_1.html",
-      "mediaDir": "/pic/photo/photo4_hannah_yellowStone/photo4_1",
-      "cover": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.13.1.webp",
+      "page": "/photoproj/photo4_1/",
+      "mediaDir": "/pic/photo/hannah_yellowStone/photo4_1",
+      "cover": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.13.1.webp",
       "visible": true,
       "showInCategory": true,
       "featured": true,
@@ -891,7 +891,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto2_1.1.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto2_1.1.1.webp",
           "alt": "photophoto2_1.1.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -899,7 +899,7 @@
           "order": 0
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto2_1.3.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto2_1.3.1.webp",
           "alt": "photophoto2_1.3.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -907,7 +907,7 @@
           "order": 1
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto2_1.2.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto2_1.2.1.webp",
           "alt": "photophoto2_1.2.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -915,7 +915,7 @@
           "order": 2
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto2_1.4.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto2_1.4.1.webp",
           "alt": "photophoto2_1.4.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -923,7 +923,7 @@
           "order": 3
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.1.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.1.1.webp",
           "alt": "photophoto1_1.1.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -931,7 +931,7 @@
           "order": 4
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.2.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.2.1.webp",
           "alt": "photophoto1_1.2.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -939,7 +939,7 @@
           "order": 5
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.3.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.3.1.webp",
           "alt": "photophoto1_1.3.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -947,7 +947,7 @@
           "order": 6
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.4.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.4.1.webp",
           "alt": "photophoto1_1.4.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -955,7 +955,7 @@
           "order": 7
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.5.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.5.1.webp",
           "alt": "photophoto1_1.5.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -963,7 +963,7 @@
           "order": 8
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.6.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.6.1.webp",
           "alt": "photophoto1_1.6.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -971,7 +971,7 @@
           "order": 9
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.10.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.10.1.webp",
           "alt": "photophoto1_1.10.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -979,7 +979,7 @@
           "order": 10
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.7.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.7.1.webp",
           "alt": "photophoto1_1.7.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -987,7 +987,7 @@
           "order": 11
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.8.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.8.1.webp",
           "alt": "photophoto1_1.8.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -995,7 +995,7 @@
           "order": 12
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.8.2.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.8.2.webp",
           "alt": "photophoto1_1.8.2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1003,7 +1003,7 @@
           "order": 13
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.9.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.9.1.webp",
           "alt": "photophoto1_1.9.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1011,7 +1011,7 @@
           "order": 14
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.11.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.11.1.webp",
           "alt": "photophoto1_1.11.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1019,7 +1019,7 @@
           "order": 15
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.12.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.12.1.webp",
           "alt": "photophoto1_1.12.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1027,7 +1027,7 @@
           "order": 16
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.14.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.14.1.webp",
           "alt": "photophoto1_1.14.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1035,7 +1035,7 @@
           "order": 17
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_1/photophoto1_1.13.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_1/photophoto1_1.13.1.webp",
           "alt": "photophoto1_1.13.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1050,9 +1050,9 @@
       "id": "photo4_2",
       "title": "Yellow Stone 2",
       "category": "photo",
-      "page": "/photoproj/photo4_2.html",
-      "mediaDir": "/pic/photo/photo4_hannah_yellowStone/photo4_2",
-      "cover": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.37.1.webp",
+      "page": "/photoproj/photo4_2/",
+      "mediaDir": "/pic/photo/hannah_yellowStone/photo4_2",
+      "cover": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.37.1.webp",
       "visible": true,
       "showInCategory": true,
       "featured": true,
@@ -1061,7 +1061,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.1.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.1.1.webp",
           "alt": "photo1_1.1.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1069,7 +1069,7 @@
           "order": 0
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.3.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.3.1.webp",
           "alt": "photo1_1.3.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1077,7 +1077,7 @@
           "order": 1
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.4.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.4.1.webp",
           "alt": "photo1_1.4.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1085,7 +1085,7 @@
           "order": 2
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.5.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.5.1.webp",
           "alt": "photo1_1.5.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1093,7 +1093,7 @@
           "order": 3
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.6.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.6.1.webp",
           "alt": "photo1_1.6.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1101,7 +1101,7 @@
           "order": 4
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.7.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.7.1.webp",
           "alt": "photo1_1.7.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1109,7 +1109,7 @@
           "order": 5
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.8.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.8.1.webp",
           "alt": "photo1_1.8.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1117,7 +1117,7 @@
           "order": 6
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.9.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.9.1.webp",
           "alt": "photo1_1.9.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1125,7 +1125,7 @@
           "order": 7
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.10.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.10.1.webp",
           "alt": "photo1_1.10.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1133,7 +1133,7 @@
           "order": 8
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.11.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.11.1.webp",
           "alt": "photo1_1.11.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1141,7 +1141,7 @@
           "order": 9
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.12.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.12.1.webp",
           "alt": "photo1_1.12.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1149,7 +1149,7 @@
           "order": 10
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.13.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.13.1.webp",
           "alt": "photo1_1.13.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1157,7 +1157,7 @@
           "order": 11
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.14.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.14.1.webp",
           "alt": "photo1_1.14.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1165,7 +1165,7 @@
           "order": 12
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.15.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.15.1.webp",
           "alt": "photo1_1.15.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1173,7 +1173,7 @@
           "order": 13
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.16.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.16.1.webp",
           "alt": "photo1_1.16.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1181,7 +1181,7 @@
           "order": 14
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.17.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.17.1.webp",
           "alt": "photo1_1.17.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1189,7 +1189,7 @@
           "order": 15
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.18.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.18.1.webp",
           "alt": "photo1_1.18.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1197,7 +1197,7 @@
           "order": 16
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.19.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.19.1.webp",
           "alt": "photo1_1.19.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1205,7 +1205,7 @@
           "order": 17
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.20.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.20.1.webp",
           "alt": "photo1_1.20.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1213,7 +1213,7 @@
           "order": 18
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.21.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.21.1.webp",
           "alt": "photo1_1.21.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1221,7 +1221,7 @@
           "order": 19
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.22.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.22.1.webp",
           "alt": "photo1_1.22.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1229,7 +1229,7 @@
           "order": 20
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.23.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.23.1.webp",
           "alt": "photo1_1.23.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1237,7 +1237,7 @@
           "order": 21
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.24.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.24.1.webp",
           "alt": "photo1_1.24.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1245,7 +1245,7 @@
           "order": 22
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.25.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.25.1.webp",
           "alt": "photo1_1.25.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1253,7 +1253,7 @@
           "order": 23
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.26.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.26.1.webp",
           "alt": "photo1_1.26.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1261,7 +1261,7 @@
           "order": 24
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.27.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.27.1.webp",
           "alt": "photo1_1.27.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1269,7 +1269,7 @@
           "order": 25
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.28.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.28.1.webp",
           "alt": "photo1_1.28.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1277,7 +1277,7 @@
           "order": 26
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.29.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.29.1.webp",
           "alt": "photo1_1.29.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1285,7 +1285,7 @@
           "order": 27
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.30.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.30.1.webp",
           "alt": "photo1_1.30.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1293,7 +1293,7 @@
           "order": 28
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.31.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.31.1.webp",
           "alt": "photo1_1.31.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1301,7 +1301,7 @@
           "order": 29
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.32.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.32.1.webp",
           "alt": "photo1_1.32.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1309,7 +1309,7 @@
           "order": 30
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.33.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.33.1.webp",
           "alt": "photo1_1.33.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1317,7 +1317,7 @@
           "order": 31
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.34.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.34.1.webp",
           "alt": "photo1_1.34.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1325,7 +1325,7 @@
           "order": 32
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.35.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.35.1.webp",
           "alt": "photo1_1.35.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1333,7 +1333,7 @@
           "order": 33
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.36.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.36.1.webp",
           "alt": "photo1_1.36.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1341,7 +1341,7 @@
           "order": 34
         },
         {
-          "src": "/pic/photo/photo4_hannah_yellowStone/photo4_2/photo1_1.37.1.webp",
+          "src": "/pic/photo/hannah_yellowStone/photo4_2/photo1_1.37.1.webp",
           "alt": "photo1_1.37.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1356,9 +1356,9 @@
       "id": "photo8",
       "title": "Genderless",
       "category": "photo",
-      "page": "/photoproj/photo8.html",
-      "mediaDir": "/pic/photo/photo8_Genderless",
-      "cover": "/pic/photo/photo8_Genderless/photo8_0.webp",
+      "page": "/photoproj/photo8/",
+      "mediaDir": "/pic/photo/Genderless",
+      "cover": "/pic/photo/Genderless/photo8_0.webp",
       "visible": true,
       "showInCategory": true,
       "featured": false,
@@ -1367,7 +1367,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/photo/photo8_Genderless/photo8_0.webp",
+          "src": "/pic/photo/Genderless/photo8_0.webp",
           "alt": "photo8_0",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1375,7 +1375,7 @@
           "order": 0
         },
         {
-          "src": "/pic/photo/photo8_Genderless/photo8_1.webp",
+          "src": "/pic/photo/Genderless/photo8_1.webp",
           "alt": "photo8_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1383,7 +1383,7 @@
           "order": 1
         },
         {
-          "src": "/pic/photo/photo8_Genderless/photo8_2.webp",
+          "src": "/pic/photo/Genderless/photo8_2.webp",
           "alt": "photo8_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1391,7 +1391,7 @@
           "order": 2
         },
         {
-          "src": "/pic/photo/photo8_Genderless/photo8_3_1.webp",
+          "src": "/pic/photo/Genderless/photo8_3_1.webp",
           "alt": "photo8_3_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1399,7 +1399,7 @@
           "order": 3
         },
         {
-          "src": "/pic/photo/photo8_Genderless/photo8_3_2.webp",
+          "src": "/pic/photo/Genderless/photo8_3_2.webp",
           "alt": "photo8_3_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1407,7 +1407,7 @@
           "order": 4
         },
         {
-          "src": "/pic/photo/photo8_Genderless/photo8_4.webp",
+          "src": "/pic/photo/Genderless/photo8_4.webp",
           "alt": "photo8_4",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1415,7 +1415,7 @@
           "order": 5
         },
         {
-          "src": "/pic/photo/photo8_Genderless/photo8_5.webp",
+          "src": "/pic/photo/Genderless/photo8_5.webp",
           "alt": "photo8_5",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1423,7 +1423,7 @@
           "order": 6
         },
         {
-          "src": "/pic/photo/photo8_Genderless/photo8_6.webp",
+          "src": "/pic/photo/Genderless/photo8_6.webp",
           "alt": "photo8_6",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1431,7 +1431,7 @@
           "order": 7
         },
         {
-          "src": "/pic/photo/photo8_Genderless/photo8_8_1.webp",
+          "src": "/pic/photo/Genderless/photo8_8_1.webp",
           "alt": "photo8_8_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1439,7 +1439,7 @@
           "order": 8
         },
         {
-          "src": "/pic/photo/photo8_Genderless/photo8_8_2.webp",
+          "src": "/pic/photo/Genderless/photo8_8_2.webp",
           "alt": "photo8_8_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1447,7 +1447,7 @@
           "order": 9
         },
         {
-          "src": "/pic/photo/photo8_Genderless/photo8_8_3.webp",
+          "src": "/pic/photo/Genderless/photo8_8_3.webp",
           "alt": "photo8_8_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1455,7 +1455,7 @@
           "order": 10
         },
         {
-          "src": "/pic/photo/photo8_Genderless/photo8_8_4.webp",
+          "src": "/pic/photo/Genderless/photo8_8_4.webp",
           "alt": "photo8_8_4",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1470,9 +1470,9 @@
       "id": "photo5",
       "title": "Blue Light",
       "category": "photo",
-      "page": "/photoproj/photo5.html",
-      "mediaDir": "/pic/photo/photo5_blueLight",
-      "cover": "/pic/photo/photo5_blueLight/photo5_1.webp",
+      "page": "/photoproj/photo5/",
+      "mediaDir": "/pic/photo/blueLight",
+      "cover": "/pic/photo/blueLight/photo5_1.webp",
       "visible": true,
       "showInCategory": true,
       "featured": false,
@@ -1481,7 +1481,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/photo/photo5_blueLight/photo5_1.webp",
+          "src": "/pic/photo/blueLight/photo5_1.webp",
           "alt": "photo5_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1489,7 +1489,7 @@
           "order": 0
         },
         {
-          "src": "/pic/photo/photo5_blueLight/photo5_2.webp",
+          "src": "/pic/photo/blueLight/photo5_2.webp",
           "alt": "photo5_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1497,7 +1497,7 @@
           "order": 1
         },
         {
-          "src": "/pic/photo/photo5_blueLight/photo5_3.webp",
+          "src": "/pic/photo/blueLight/photo5_3.webp",
           "alt": "photo5_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1505,7 +1505,7 @@
           "order": 2
         },
         {
-          "src": "/pic/photo/photo5_blueLight/photo5_4.webp",
+          "src": "/pic/photo/blueLight/photo5_4.webp",
           "alt": "photo5_4",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1513,7 +1513,7 @@
           "order": 3
         },
         {
-          "src": "/pic/photo/photo5_blueLight/photo5_5.webp",
+          "src": "/pic/photo/blueLight/photo5_5.webp",
           "alt": "photo5_5",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1521,7 +1521,7 @@
           "order": 4
         },
         {
-          "src": "/pic/photo/photo5_blueLight/photo5_6.webp",
+          "src": "/pic/photo/blueLight/photo5_6.webp",
           "alt": "photo5_6",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1529,7 +1529,7 @@
           "order": 5
         },
         {
-          "src": "/pic/photo/photo5_blueLight/photo5_7.webp",
+          "src": "/pic/photo/blueLight/photo5_7.webp",
           "alt": "photo5_7",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1537,7 +1537,7 @@
           "order": 6
         },
         {
-          "src": "/pic/photo/photo5_blueLight/photo5_8.webp",
+          "src": "/pic/photo/blueLight/photo5_8.webp",
           "alt": "photo5_8",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1552,9 +1552,9 @@
       "id": "photo7",
       "title": "Heshu House",
       "category": "photo",
-      "page": "/photoproj/photo7.html",
-      "mediaDir": "/pic/photo/photo7_HeshuHouse",
-      "cover": "/pic/photo/photo7_HeshuHouse/photo7_1.webp",
+      "page": "/photoproj/photo7/",
+      "mediaDir": "/pic/photo/HeshuHouse",
+      "cover": "/pic/photo/HeshuHouse/photo7_1.webp",
       "visible": true,
       "showInCategory": true,
       "featured": false,
@@ -1563,7 +1563,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/photo/photo7_HeshuHouse/photo7_1.webp",
+          "src": "/pic/photo/HeshuHouse/photo7_1.webp",
           "alt": "photo7_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1571,7 +1571,7 @@
           "order": 0
         },
         {
-          "src": "/pic/photo/photo7_HeshuHouse/photo7_2.webp",
+          "src": "/pic/photo/HeshuHouse/photo7_2.webp",
           "alt": "photo7_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1579,7 +1579,7 @@
           "order": 1
         },
         {
-          "src": "/pic/photo/photo7_HeshuHouse/photo7_3.webp",
+          "src": "/pic/photo/HeshuHouse/photo7_3.webp",
           "alt": "photo7_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1587,7 +1587,7 @@
           "order": 2
         },
         {
-          "src": "/pic/photo/photo7_HeshuHouse/photo7_4.webp",
+          "src": "/pic/photo/HeshuHouse/photo7_4.webp",
           "alt": "photo7_4",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1595,7 +1595,7 @@
           "order": 3
         },
         {
-          "src": "/pic/photo/photo7_HeshuHouse/photo7_5.webp",
+          "src": "/pic/photo/HeshuHouse/photo7_5.webp",
           "alt": "photo7_5",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1603,7 +1603,7 @@
           "order": 4
         },
         {
-          "src": "/pic/photo/photo7_HeshuHouse/photo7_6.webp",
+          "src": "/pic/photo/HeshuHouse/photo7_6.webp",
           "alt": "photo7_6",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1611,7 +1611,7 @@
           "order": 5
         },
         {
-          "src": "/pic/photo/photo7_HeshuHouse/photo7_7.webp",
+          "src": "/pic/photo/HeshuHouse/photo7_7.webp",
           "alt": "photo7_7",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1619,7 +1619,7 @@
           "order": 6
         },
         {
-          "src": "/pic/photo/photo7_HeshuHouse/photo7_8.webp",
+          "src": "/pic/photo/HeshuHouse/photo7_8.webp",
           "alt": "photo7_8",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1634,9 +1634,9 @@
       "id": "secret1",
       "title": "Dusk By The Sea",
       "category": "secret",
-      "page": "/secretproj/secret1.html",
-      "mediaDir": "/pic/secret/secret1_DuskByTheSea",
-      "cover": "/pic/secret/secret1_DuskByTheSea/secret1.webp",
+      "page": "/secretproj/secret1/",
+      "mediaDir": "/pic/secret/DuskByTheSea",
+      "cover": "/pic/secret/DuskByTheSea/secret1.webp",
       "visible": true,
       "showInCategory": true,
       "featured": true,
@@ -1645,7 +1645,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/secret/secret1_DuskByTheSea/secret1.webp",
+          "src": "/pic/secret/DuskByTheSea/secret1.webp",
           "alt": "secret1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1653,7 +1653,7 @@
           "order": 0
         },
         {
-          "src": "/pic/secret/secret1_DuskByTheSea/1.webp",
+          "src": "/pic/secret/DuskByTheSea/1.webp",
           "alt": "1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1661,7 +1661,7 @@
           "order": 1
         },
         {
-          "src": "/pic/secret/secret1_DuskByTheSea/2.webp",
+          "src": "/pic/secret/DuskByTheSea/2.webp",
           "alt": "2",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1669,7 +1669,7 @@
           "order": 2
         },
         {
-          "src": "/pic/secret/secret1_DuskByTheSea/3.webp",
+          "src": "/pic/secret/DuskByTheSea/3.webp",
           "alt": "3",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1677,7 +1677,7 @@
           "order": 3
         },
         {
-          "src": "/pic/secret/secret1_DuskByTheSea/4.webp",
+          "src": "/pic/secret/DuskByTheSea/4.webp",
           "alt": "4",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1685,7 +1685,7 @@
           "order": 4
         },
         {
-          "src": "/pic/secret/secret1_DuskByTheSea/5.webp",
+          "src": "/pic/secret/DuskByTheSea/5.webp",
           "alt": "5",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1700,9 +1700,9 @@
       "id": "secret2",
       "title": "Until Sunset",
       "category": "secret",
-      "page": "/secretproj/secret2.html",
-      "mediaDir": "/pic/secret/secret2_UntilSunset",
-      "cover": "/pic/secret/secret2_UntilSunset/secret2.webp",
+      "page": "/secretproj/secret2/",
+      "mediaDir": "/pic/secret/UntilSunset",
+      "cover": "/pic/secret/UntilSunset/secret2.webp",
       "visible": true,
       "showInCategory": true,
       "featured": true,
@@ -1711,7 +1711,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/secret/secret2_UntilSunset/secret2.webp",
+          "src": "/pic/secret/UntilSunset/secret2.webp",
           "alt": "secret2",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1719,7 +1719,7 @@
           "order": 0
         },
         {
-          "src": "/pic/secret/secret2_UntilSunset/1.webp",
+          "src": "/pic/secret/UntilSunset/1.webp",
           "alt": "1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1727,7 +1727,7 @@
           "order": 1
         },
         {
-          "src": "/pic/secret/secret2_UntilSunset/2.webp",
+          "src": "/pic/secret/UntilSunset/2.webp",
           "alt": "2",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1735,7 +1735,7 @@
           "order": 2
         },
         {
-          "src": "/pic/secret/secret2_UntilSunset/3.webp",
+          "src": "/pic/secret/UntilSunset/3.webp",
           "alt": "3",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1743,7 +1743,7 @@
           "order": 3
         },
         {
-          "src": "/pic/secret/secret2_UntilSunset/4.webp",
+          "src": "/pic/secret/UntilSunset/4.webp",
           "alt": "4",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1758,9 +1758,9 @@
       "id": "secret6",
       "title": "Mist",
       "category": "secret",
-      "page": "/secretproj/secret6.html",
-      "mediaDir": "/pic/secret/secret6_Mist",
-      "cover": "/pic/secret/secret6_Mist/5.webp",
+      "page": "/secretproj/secret6/",
+      "mediaDir": "/pic/secret/Mist",
+      "cover": "/pic/secret/Mist/5.webp",
       "visible": true,
       "showInCategory": true,
       "featured": true,
@@ -1769,7 +1769,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/secret/secret6_Mist/5.webp",
+          "src": "/pic/secret/Mist/5.webp",
           "alt": "5",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1777,7 +1777,7 @@
           "order": 0
         },
         {
-          "src": "/pic/secret/secret6_Mist/6.webp",
+          "src": "/pic/secret/Mist/6.webp",
           "alt": "6",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1785,7 +1785,7 @@
           "order": 1
         },
         {
-          "src": "/pic/secret/secret6_Mist/3.webp",
+          "src": "/pic/secret/Mist/3.webp",
           "alt": "3",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1793,7 +1793,7 @@
           "order": 2
         },
         {
-          "src": "/pic/secret/secret6_Mist/mist_zhexitianchi-2023_1.14.1.LR_R.webp",
+          "src": "/pic/secret/Mist/mist_zhexitianchi-2023_1.14.1.LR_R.webp",
           "alt": "mist_zhexitianchi-2023_1.14.1.LR_R",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1801,7 +1801,7 @@
           "order": 3
         },
         {
-          "src": "/pic/secret/secret6_Mist/mist_zhexitianchi-2023_1.13.1.LR_R.webp",
+          "src": "/pic/secret/Mist/mist_zhexitianchi-2023_1.13.1.LR_R.webp",
           "alt": "mist_zhexitianchi-2023_1.13.1.LR_R",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1809,7 +1809,7 @@
           "order": 4
         },
         {
-          "src": "/pic/secret/secret6_Mist/mist_zhexitianchi-2023_1.1.1.LR_R.webp",
+          "src": "/pic/secret/Mist/mist_zhexitianchi-2023_1.1.1.LR_R.webp",
           "alt": "mist_zhexitianchi-2023_1.1.1.LR_R",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1817,7 +1817,7 @@
           "order": 5
         },
         {
-          "src": "/pic/secret/secret6_Mist/mist_zhexitianchi-2023_1.7.1.LR_R.webp",
+          "src": "/pic/secret/Mist/mist_zhexitianchi-2023_1.7.1.LR_R.webp",
           "alt": "mist_zhexitianchi-2023_1.7.1.LR_R",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1825,7 +1825,7 @@
           "order": 6
         },
         {
-          "src": "/pic/secret/secret6_Mist/mist_zhexitianchi-2023_1.3.1_LR_R.webp",
+          "src": "/pic/secret/Mist/mist_zhexitianchi-2023_1.3.1_LR_R.webp",
           "alt": "mist_zhexitianchi-2023_1.3.1_LR_R",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1833,23 +1833,7 @@
           "order": 7
         },
         {
-          "src": "/pic/secret/secret6_Mist/mist_zhexitianchi-2023_1.16.1.LR_R.webp",
-          "alt": "mist_zhexitianchi-2023_1.16.1.LR_R",
-          "orientation": "landscape",
-          "aspectRatio": "3 / 2",
-          "visible": true,
-          "order": 8
-        },
-        {
-          "src": "/pic/secret/secret6_Mist/mist_zhexitianchi-2023_1.18.1.LR_L.webp",
-          "alt": "mist_zhexitianchi-2023_1.18.1.LR_L",
-          "orientation": "landscape",
-          "aspectRatio": "3 / 2",
-          "visible": true,
-          "order": 9
-        },
-        {
-          "src": "/pic/secret/secret6_Mist/mist_zhexitianchi-2023_1.26.1.LR_R.webp",
+          "src": "/pic/secret/Mist/mist_zhexitianchi-2023_1.26.1.LR_R.webp",
           "alt": "mist_zhexitianchi-2023_1.26.1.LR_R",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1857,7 +1841,7 @@
           "order": 10
         },
         {
-          "src": "/pic/secret/secret6_Mist/0.webp",
+          "src": "/pic/secret/Mist/0.webp",
           "alt": "0",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1865,12 +1849,28 @@
           "order": 11
         },
         {
-          "src": "/pic/secret/secret6_Mist/4.webp",
+          "src": "/pic/secret/Mist/4.webp",
           "alt": "4",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
           "visible": false,
           "order": 12
+        },
+        {
+          "src": "/pic/secret/Mist/secret_zhexitianchi-2023_1.16.1.LR_R.webp",
+          "alt": "secret_zhexitianchi-2023_1.16.1.LR_R",
+          "orientation": "landscape",
+          "aspectRatio": "3 / 2",
+          "visible": true,
+          "order": 13
+        },
+        {
+          "src": "/pic/secret/Mist/secret_zhexitianchi-2023_1.18.1.LR_L.webp",
+          "alt": "secret_zhexitianchi-2023_1.18.1.LR_L",
+          "orientation": "landscape",
+          "aspectRatio": "3 / 2",
+          "visible": true,
+          "order": 14
         }
       ],
       "coverOrientation": "landscape",
@@ -1880,9 +1880,9 @@
       "id": "secret8",
       "title": "Mountain",
       "category": "secret",
-      "page": "/secretproj/secret8.html",
-      "mediaDir": "/pic/secret/secret8_Mountain",
-      "cover": "/pic/secret/secret8_Mountain/0.webp",
+      "page": "/secretproj/secret8/",
+      "mediaDir": "/pic/secret/Mountain",
+      "cover": "/pic/secret/Mountain/0.webp",
       "visible": true,
       "showInCategory": true,
       "featured": true,
@@ -1891,7 +1891,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/secret/secret8_Mountain/0.webp",
+          "src": "/pic/secret/Mountain/0.webp",
           "alt": "0",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1899,7 +1899,7 @@
           "order": 0
         },
         {
-          "src": "/pic/secret/secret8_Mountain/1.webp",
+          "src": "/pic/secret/Mountain/1.webp",
           "alt": "1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1907,7 +1907,7 @@
           "order": 1
         },
         {
-          "src": "/pic/secret/secret8_Mountain/2.webp",
+          "src": "/pic/secret/Mountain/2.webp",
           "alt": "2",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1915,7 +1915,7 @@
           "order": 2
         },
         {
-          "src": "/pic/secret/secret8_Mountain/3.webp",
+          "src": "/pic/secret/Mountain/3.webp",
           "alt": "3",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1923,7 +1923,7 @@
           "order": 3
         },
         {
-          "src": "/pic/secret/secret8_Mountain/4.webp",
+          "src": "/pic/secret/Mountain/4.webp",
           "alt": "4",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1931,7 +1931,7 @@
           "order": 4
         },
         {
-          "src": "/pic/secret/secret8_Mountain/5.webp",
+          "src": "/pic/secret/Mountain/5.webp",
           "alt": "5",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1939,7 +1939,7 @@
           "order": 5
         },
         {
-          "src": "/pic/secret/secret8_Mountain/6.webp",
+          "src": "/pic/secret/Mountain/6.webp",
           "alt": "6",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1947,7 +1947,7 @@
           "order": 6
         },
         {
-          "src": "/pic/secret/secret8_Mountain/7.webp",
+          "src": "/pic/secret/Mountain/7.webp",
           "alt": "7",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1955,7 +1955,7 @@
           "order": 7
         },
         {
-          "src": "/pic/secret/secret8_Mountain/8.webp",
+          "src": "/pic/secret/Mountain/8.webp",
           "alt": "8",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -1963,7 +1963,7 @@
           "order": 8
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.1.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.1.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.1.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1971,7 +1971,7 @@
           "order": 9
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.2.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.2.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.2.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1979,7 +1979,7 @@
           "order": 10
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.3.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.3.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.3.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1987,7 +1987,7 @@
           "order": 11
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.4.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.4.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.4.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -1995,7 +1995,7 @@
           "order": 12
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.5.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.5.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.5.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2003,7 +2003,7 @@
           "order": 13
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.6.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.6.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.6.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2011,7 +2011,7 @@
           "order": 14
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.7.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.7.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.7.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2019,7 +2019,7 @@
           "order": 15
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.8.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.8.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.8.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2027,7 +2027,7 @@
           "order": 16
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.9.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.9.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.9.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2035,7 +2035,7 @@
           "order": 17
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.10.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.10.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.10.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2043,7 +2043,7 @@
           "order": 18
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.11.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.11.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.11.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2051,7 +2051,7 @@
           "order": 19
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.12.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.12.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.12.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2059,7 +2059,7 @@
           "order": 20
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.13.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.13.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.13.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2067,7 +2067,7 @@
           "order": 21
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.15.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.15.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.15.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2075,7 +2075,7 @@
           "order": 22
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.16.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.16.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.16.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2083,7 +2083,7 @@
           "order": 23
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_davinci_kawagebo_2025_1.18.1.webp",
+          "src": "/pic/secret/Mountain/mountain_davinci_kawagebo_2025_1.18.1.webp",
           "alt": "mountain_davinci_kawagebo_2025_1.18.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2091,7 +2091,7 @@
           "order": 25
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_sanqing_1.5.1.webp",
+          "src": "/pic/secret/Mountain/mountain_sanqing_1.5.1.webp",
           "alt": "mountain_sanqing_1.5.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2099,7 +2099,7 @@
           "order": 26
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_sanqing_1.12.1.webp",
+          "src": "/pic/secret/Mountain/mountain_sanqing_1.12.1.webp",
           "alt": "mountain_sanqing_1.12.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2107,7 +2107,7 @@
           "order": 27
         },
         {
-          "src": "/pic/secret/secret8_Mountain/mountain_sanqing-2.webp",
+          "src": "/pic/secret/Mountain/mountain_sanqing-2.webp",
           "alt": "mountain_sanqing-2",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2122,9 +2122,9 @@
       "id": "secret7",
       "title": "River",
       "category": "secret",
-      "page": "/secretproj/secret7.html",
-      "mediaDir": "/pic/secret/secret7_River",
-      "cover": "/pic/secret/secret7_River/0.webp",
+      "page": "/secretproj/secret7/",
+      "mediaDir": "/pic/secret/River",
+      "cover": "/pic/secret/River/0.webp",
       "visible": true,
       "showInCategory": true,
       "featured": true,
@@ -2133,7 +2133,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/secret/secret7_River/secret7.webp",
+          "src": "/pic/secret/River/secret7.webp",
           "alt": "secret7",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2141,7 +2141,7 @@
           "order": 0
         },
         {
-          "src": "/pic/secret/secret7_River/0.webp",
+          "src": "/pic/secret/River/0.webp",
           "alt": "0",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2149,7 +2149,7 @@
           "order": 1
         },
         {
-          "src": "/pic/secret/secret7_River/1.webp",
+          "src": "/pic/secret/River/1.webp",
           "alt": "1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2157,7 +2157,7 @@
           "order": 2
         },
         {
-          "src": "/pic/secret/secret7_River/2.webp",
+          "src": "/pic/secret/River/2.webp",
           "alt": "2",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2165,7 +2165,7 @@
           "order": 3
         },
         {
-          "src": "/pic/secret/secret7_River/3.webp",
+          "src": "/pic/secret/River/3.webp",
           "alt": "3",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2173,7 +2173,7 @@
           "order": 4
         },
         {
-          "src": "/pic/secret/secret7_River/4.webp",
+          "src": "/pic/secret/River/4.webp",
           "alt": "4",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
@@ -2188,9 +2188,9 @@
       "id": "photo6",
       "title": "Blue Eyeshadow",
       "category": "photo",
-      "page": "/photoproj/photo6.html",
-      "mediaDir": "/pic/photo/photo6_blueEyeshadow",
-      "cover": "/pic/photo/photo6_blueEyeshadow/photo6_1.webp",
+      "page": "/photoproj/photo6/",
+      "mediaDir": "/pic/photo/blueEyeshadow",
+      "cover": "/pic/photo/blueEyeshadow/photo6_1.webp",
       "visible": false,
       "showInCategory": false,
       "featured": false,
@@ -2199,7 +2199,7 @@
       "layout": "single-column",
       "images": [
         {
-          "src": "/pic/photo/photo6_blueEyeshadow/photo6_1.webp",
+          "src": "/pic/photo/blueEyeshadow/photo6_1.webp",
           "alt": "photo6_1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -2207,7 +2207,7 @@
           "order": 0
         },
         {
-          "src": "/pic/photo/photo6_blueEyeshadow/photo6_2.webp",
+          "src": "/pic/photo/blueEyeshadow/photo6_2.webp",
           "alt": "photo6_2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -2215,7 +2215,7 @@
           "order": 1
         },
         {
-          "src": "/pic/photo/photo6_blueEyeshadow/photo6_3.webp",
+          "src": "/pic/photo/blueEyeshadow/photo6_3.webp",
           "alt": "photo6_3",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -2230,7 +2230,7 @@
       "id": "portrait-lfy",
       "title": "LFY",
       "category": "portrait",
-      "page": "/portraitproj/lfy.html",
+      "page": "/portraitproj/lfy/",
       "mediaDir": "/pic/portrait/LFY",
       "cover": "/pic/portrait/LFY/portrait_bythebluesea2024-1.3.1.webp",
       "visible": true,
@@ -2328,7 +2328,7 @@
       "id": "portrait-graduation",
       "title": "Graduation",
       "category": "portrait",
-      "page": "/portraitproj/graduation.html",
+      "page": "/portraitproj/graduation/",
       "mediaDir": "/pic/portrait/graduation",
       "cover": "/pic/portrait/graduation/portrait_biye-hubian.webp",
       "visible": true,
@@ -2394,7 +2394,7 @@
       "id": "portrait-hangzhou-czk",
       "title": "Hangzhou CZK",
       "category": "portrait",
-      "page": "/portraitproj/hangzhou-czk.html",
+      "page": "/portraitproj/hangzhou-czk/",
       "mediaDir": "/pic/portrait/hangzhou_czk",
       "cover": "/pic/portrait/hangzhou_czk/portrait_xihu-czk-5.webp",
       "visible": true,
@@ -2580,7 +2580,7 @@
       "id": "portrait-seabreeze",
       "title": "Sea Breeze",
       "category": "portrait",
-      "page": "/portraitproj/seabreeze.html",
+      "page": "/portraitproj/seabreeze/",
       "mediaDir": "/pic/portrait/SeaBreeze",
       "cover": "/pic/portrait/SeaBreeze/secret3.webp",
       "visible": true,
@@ -2662,7 +2662,7 @@
       "id": "portrait-grass",
       "title": "Grass",
       "category": "portrait",
-      "page": "/portraitproj/grass.html",
+      "page": "/portraitproj/grass/",
       "mediaDir": "/pic/portrait/Grass",
       "cover": "/pic/portrait/Grass/secret4_0.webp",
       "visible": true,
@@ -2768,7 +2768,7 @@
       "id": "portrait-hiking",
       "title": "Hiking",
       "category": "portrait",
-      "page": "/portraitproj/hiking.html",
+      "page": "/portraitproj/hiking/",
       "mediaDir": "/pic/portrait/hiking",
       "cover": "/pic/portrait/hiking/hiking_davinci_kawagebo_1.6.1.webp",
       "visible": true,
@@ -2781,18 +2781,18 @@
       "coverAspectRatio": "2 / 3",
       "images": [
         {
-          "src": "/pic/portrait/hiking/hiking_davinci_kawagebo_1.2.1.webp",
-          "alt": "hiking_davinci_kawagebo_1.2.1",
-          "orientation": "portrait",
-          "aspectRatio": "2 / 3",
-          "visible": true,
-          "order": 0
-        },
-        {
           "src": "/pic/portrait/hiking/hiking_davinci_kawagebo_1.1.1.webp",
           "alt": "hiking_davinci_kawagebo_1.1.1",
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
+          "visible": true,
+          "order": 0
+        },
+        {
+          "src": "/pic/portrait/hiking/hiking_davinci_kawagebo_1.2.1.webp",
+          "alt": "hiking_davinci_kawagebo_1.2.1",
+          "orientation": "portrait",
+          "aspectRatio": "2 / 3",
           "visible": true,
           "order": 1
         },
@@ -2805,12 +2805,20 @@
           "order": 2
         },
         {
+          "src": "/pic/portrait/hiking/hiking_davinci_kawagebo_2025_1.17.1.webp",
+          "alt": "hiking_davinci_kawagebo_2025_1.17.1",
+          "orientation": "landscape",
+          "aspectRatio": "3 / 2",
+          "visible": true,
+          "order": 3
+        },
+        {
           "src": "/pic/portrait/hiking/hiking_davinci_kawagebo_1.4.1.webp",
           "alt": "hiking_davinci_kawagebo_1.4.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": false,
-          "order": 3
+          "order": 4
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_kawagebo_1.6.1.webp",
@@ -2818,7 +2826,7 @@
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": true,
-          "order": 4
+          "order": 5
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_kawagebo_1.5.1.webp",
@@ -2826,7 +2834,7 @@
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": true,
-          "order": 5
+          "order": 6
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_kawagebo-WX_1.7.1.webp",
@@ -2834,7 +2842,7 @@
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": true,
-          "order": 6
+          "order": 7
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_kawagebo_1.3.1.webp",
@@ -2842,7 +2850,7 @@
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
           "visible": true,
-          "order": 7
+          "order": 8
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_taizijian_2023_1.24.1.webp",
@@ -2850,7 +2858,7 @@
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
           "visible": true,
-          "order": 8
+          "order": 9
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_taizijian_2023_1.21.1.webp",
@@ -2858,7 +2866,7 @@
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
           "visible": true,
-          "order": 9
+          "order": 10
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_taizijian_2023_1.22.1.webp",
@@ -2866,7 +2874,7 @@
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
           "visible": false,
-          "order": 10
+          "order": 11
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_taizijian_2023_1.23.1.webp",
@@ -2874,7 +2882,7 @@
           "orientation": "landscape",
           "aspectRatio": "3 / 2",
           "visible": true,
-          "order": 11
+          "order": 12
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_xinmeijian-2023_1.10.1.webp",
@@ -2882,7 +2890,7 @@
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": true,
-          "order": 12
+          "order": 13
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_xinmeijian-2023_1.11.1.webp",
@@ -2890,7 +2898,7 @@
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": false,
-          "order": 13
+          "order": 14
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_xinmeijian-2023_1.12.1.webp",
@@ -2898,7 +2906,7 @@
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": true,
-          "order": 14
+          "order": 15
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_xinmeijian-2023_1.13.1.webp",
@@ -2906,7 +2914,7 @@
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": true,
-          "order": 15
+          "order": 16
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_xinmeijian-2023_1.14.1.webp",
@@ -2914,7 +2922,7 @@
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": true,
-          "order": 16
+          "order": 17
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_xinmeijian-2023_1.15.1.webp",
@@ -2922,7 +2930,7 @@
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": true,
-          "order": 17
+          "order": 18
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_xinmeijian-2023_1.16.1.webp",
@@ -2930,7 +2938,7 @@
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": true,
-          "order": 18
+          "order": 19
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_xinmeijian-2023_1.17.1.webp",
@@ -2938,7 +2946,7 @@
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": true,
-          "order": 19
+          "order": 20
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_zoumagang-2023_1.18.1.webp",
@@ -2946,7 +2954,7 @@
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": true,
-          "order": 20
+          "order": 21
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_zoumagang-2023_1.19.1.webp",
@@ -2954,7 +2962,7 @@
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": true,
-          "order": 21
+          "order": 22
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_mucenshan-2023_1.9.1.webp",
@@ -2962,21 +2970,13 @@
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": true,
-          "order": 22
+          "order": 23
         },
         {
           "src": "/pic/portrait/hiking/hiking_davinci_mucenshan-2023_1.8.1.webp",
           "alt": "hiking_davinci_mucenshan-2023_1.8.1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
-          "visible": true,
-          "order": 23
-        },
-        {
-          "src": "/pic/portrait/hiking/hiking_davinci_kawagebo_2025_1.17.1.webp",
-          "alt": "hiking_davinci_kawagebo_2025_1.17.1",
-          "orientation": "landscape",
-          "aspectRatio": "3 / 2",
           "visible": true,
           "order": 24
         }
@@ -2986,7 +2986,7 @@
       "id": "portrait-xcrj",
       "title": "XCRJ",
       "category": "portrait",
-      "page": "/portraitproj/xcrj.html",
+      "page": "/portraitproj/xcrj/",
       "mediaDir": "/pic/portrait/XCRJ",
       "cover": "/pic/portrait/XCRJ/XCRJ_XCRJ2025_1.2.1.webp",
       "visible": true,
@@ -3124,9 +3124,9 @@
       "id": "photo-photo8-1-genderless-bandw",
       "title": "1 Genderless B&W",
       "category": "photo",
-      "page": "/photoproj/photo8-1-genderless-bandw.html",
-      "mediaDir": "/pic/photo/photo8_1_Genderless_B&W",
-      "cover": "/pic/photo/photo8_1_Genderless_B&W/DSC05673.jpg",
+      "page": "/photoproj/photo8-1-genderless-bandw/",
+      "mediaDir": "/pic/photo/Genderless_B&W",
+      "cover": "/pic/photo/Genderless_B&W/DSC05673.jpg",
       "visible": true,
       "showInCategory": true,
       "featured": false,
@@ -3137,7 +3137,7 @@
       "coverAspectRatio": "2 / 3",
       "images": [
         {
-          "src": "/pic/photo/photo8_1_Genderless_B&W/DSC04923 2.jpg",
+          "src": "/pic/photo/Genderless_B&W/DSC04923 2.jpg",
           "alt": "DSC04923 2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -3145,7 +3145,7 @@
           "order": 0
         },
         {
-          "src": "/pic/photo/photo8_1_Genderless_B&W/DSC05673.jpg",
+          "src": "/pic/photo/Genderless_B&W/DSC05673.jpg",
           "alt": "DSC05673",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -3153,7 +3153,7 @@
           "order": 1
         },
         {
-          "src": "/pic/photo/photo8_1_Genderless_B&W/DSC05231 1.jpg",
+          "src": "/pic/photo/Genderless_B&W/DSC05231 1.jpg",
           "alt": "DSC05231 1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",

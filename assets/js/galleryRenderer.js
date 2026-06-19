@@ -2,6 +2,12 @@
   const PROJECTS_URL = "/assets/data/projects.json";
   const FILMS_URL = "/assets/data/films.json";
   const BLOGS_URL = "/assets/data/blogs.json";
+  const CATEGORY_PATHS = {
+    makeup: "/makeup/",
+    photo: "/photo/",
+    portrait: "/portrait/",
+    secret: "/secret/",
+  };
 
   function byOrder(field) {
     return function (a, b) {
@@ -36,8 +42,9 @@
   function renderProjectCard(project) {
     const orientation = project.coverOrientation === "landscape" ? "landscape" : "portrait";
     const aspectRatio = project.coverAspectRatio || (orientation === "landscape" ? "3 / 2" : "2 / 3");
+    const categoryPath = CATEGORY_PATHS[project.category] || "/home/";
     return [
-      `<a class="project-frame project-card ${frameClass(orientation)}" style="--project-frame-ratio: ${escapeText(aspectRatio)};" href="${escapeText(project.page)}">`,
+      `<a class="project-frame project-card ${frameClass(orientation)}" style="--project-frame-ratio: ${escapeText(aspectRatio)};" href="${escapeText(categoryPath)}" data-detail-url="${escapeText(project.page)}">`,
       imageTag(project.cover, project.title),
       "</a>",
     ].join("");
@@ -71,7 +78,11 @@
       .map((image) => renderDetailImage(image, project))
       .join("")}</div>`;
 
-    document.title = `LeeU2 - ${project.title}`;
+    document.title = "";
+    const categoryPath = CATEGORY_PATHS[project.category];
+    if (categoryPath && window.location.pathname !== categoryPath) {
+      window.history.replaceState({ projectId: project.id }, "", categoryPath);
+    }
   }
 
   function findProject(projects, projectId) {
@@ -124,13 +135,26 @@
     container.innerHTML = visiblePosts
       .map(function (post) {
         return [
-          `<a href="${escapeText(post.href)}">`,
+          `<a href="/blog/" data-detail-url="${escapeText(post.href)}">`,
           `<span style="color:#333;">${escapeText(post.date)}</span> `,
           `<span style="color:#000;">${escapeText(post.title)}</span>`,
           "</a>",
         ].join("");
       })
       .join("");
+  }
+
+  function bindDetailNavigation() {
+    if (window.__leeu2DetailNavigationBound) return;
+    window.__leeu2DetailNavigationBound = true;
+
+    document.addEventListener("click", function (event) {
+      const link = event.target.closest("a[data-detail-url]");
+      if (!link) return;
+
+      event.preventDefault();
+      window.location.assign(link.dataset.detailUrl);
+    });
   }
 
   function bindFullscreenImages() {
@@ -237,6 +261,7 @@
   }
 
   async function init() {
+    bindDetailNavigation();
     bindFullscreenImages();
     try {
       await Promise.all([initProjectAreas(), initFilmAreas(), initBlogAreas()]);

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <style>
+    .poem-container {
+      max-width: 700px;
+      margin: 2em auto;
+      padding: 2em;
+      font-size: 0.9em;
+      line-height: 2.1;
+      white-space: pre-line;
+      text-align: center;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script>
+    if (window.location.pathname !== "/blog/") {
+      window.history.replaceState({ postId: "blog250604" }, "", "/blog/");
+    }
+  </script>
+  <!-- 引用 navbar.html -->
+  <div id="navbar"></div>
+  <script src="/assets/js/loadNavbar.js"></script>
+  <script src="/assets/js/navunderline.js"></script>
+  <!-- 引用 navbar.html -->
+  <section id="home">
+    <div class="poem-container">
+      空气中飘来一抹红
+
+      草地上的雨水浸透了鞋
+
+      夜幕拉下
+
+      眼中闪着点点星光
+
+      隐入林中
+
+      透过树叶和山脊
+
+      燃起了微微火光
+
+      直到头顶空无一物
+
+      火光掩映着星光
+
+      才沉沉睡去
+    </div>
+  </section>
+  <div id="site-footer"></div>
+  <script src="/assets/js/loadFooter.js"></script>
+  <script src="/assets/js/menu.js"></script><!-- 引用 navbar.html -->
+</body>
+</html>
