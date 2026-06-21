@@ -36,9 +36,8 @@ function bindMenuEvents() {
     const menu = document.getElementById("menu");
     const navbar = menu?.closest(".navbar");
     const logo = navbar?.querySelector(".logo");
-    // 检查元素是否存在
+    // 导航栏由 loadNavbar.js 异步插入；首次 DOMContentLoaded 时可能尚未出现。
     if (!hamburger || !closeBtn || !menu) {
-      console.error("元素未找到！");
       return;
     }
     window.__leeu2MenuBound = true;
