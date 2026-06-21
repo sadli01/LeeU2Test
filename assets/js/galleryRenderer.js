@@ -2,6 +2,8 @@
   const PROJECTS_URL = "/assets/data/projects.json";
   const FILMS_URL = "/assets/data/films.json";
   const BLOGS_URL = "/assets/data/blogs.json";
+  const IMAGE_ORIGIN = "https://img.leeu2.com";
+  const OPTIMIZED_IMAGE_PATH = "/optimized";
   const CATEGORY_PATHS = {
     makeup: "/makeup/",
     photo: "/photo/",
@@ -31,31 +33,49 @@
     return response.json();
   }
 
-  function imageTag(src, alt) {
-    return `<img src="${escapeText(src)}" alt="${escapeText(alt)}" loading="lazy" class="fullscreenImage"/>`;
+  function optimizedImageUrl(src, size) {
+    if (!src || !src.startsWith(`${IMAGE_ORIGIN}/`)) return src;
+    const relativePath = src.slice(IMAGE_ORIGIN.length);
+    return `${IMAGE_ORIGIN}${OPTIMIZED_IMAGE_PATH}/${size}${relativePath.replace(/\.[^./]+$/, ".webp")}`;
+  }
+
+  function imageTag(src, alt, usage, isPriority) {
+    const small = optimizedImageUrl(src, "small");
+    const large = optimizedImageUrl(src, "large");
+    const sizes = usage === "cover" ? "(max-width: 640px) 96vw, 70vw" : "(max-width: 640px) 96vw, 1200px";
+    const loading = isPriority ? "eager" : "lazy";
+    const priority = isPriority ? ' fetchpriority="high"' : "";
+    return [
+      `<img src="${escapeText(small)}"`,
+      ` srcset="${escapeText(small)} 1280w, ${escapeText(large)} 2560w"`,
+      ` sizes="${escapeText(sizes)}"`,
+      ` data-large-src="${escapeText(large)}"`,
+      ` alt="${escapeText(alt)}"`,
+      ` loading="${loading}"${priority} decoding="async" class="fullscreenImage"/>`,
+    ].join("");
   }
 
   function frameClass(orientation) {
     return orientation === "landscape" ? "project-frame--landscape" : "project-frame--portrait";
   }
 
-  function renderProjectCard(project) {
+  function renderProjectCard(project, index) {
     const orientation = project.coverOrientation === "landscape" ? "landscape" : "portrait";
     const aspectRatio = project.coverAspectRatio || (orientation === "landscape" ? "3 / 2" : "2 / 3");
     const categoryPath = CATEGORY_PATHS[project.category] || "/home/";
     return [
       `<a class="project-frame project-card ${frameClass(orientation)}" style="--project-frame-ratio: ${escapeText(aspectRatio)};" href="${escapeText(categoryPath)}" data-detail-url="${escapeText(project.page)}">`,
-      imageTag(project.cover, project.title),
+      imageTag(project.cover, project.title, "cover", index === 0),
       "</a>",
     ].join("");
   }
 
-  function renderDetailImage(image, project) {
+  function renderDetailImage(image, project, index) {
     const orientation = image.orientation === "landscape" ? "landscape" : "portrait";
     const aspectRatio = image.aspectRatio || (orientation === "landscape" ? "3 / 2" : "2 / 3");
     return [
       `<div class="project-frame project-detail-frame ${frameClass(orientation)}" style="--project-frame-ratio: ${escapeText(aspectRatio)};">`,
-      imageTag(image.src, image.alt || project.title),
+      imageTag(image.src, image.alt || project.title, "detail", index === 0),
       "</div>",
     ].join("");
   }
@@ -75,7 +95,7 @@
       .sort(byOrder("order"));
 
     container.innerHTML = `<div class="gallery gallery--frames">${visibleImages
-      .map((image) => renderDetailImage(image, project))
+      .map((image, index) => renderDetailImage(image, project, index))
       .join("")}</div>`;
 
     document.title = "";
@@ -97,7 +117,7 @@
   function renderVideoPlaceholder(film) {
     return [
       `<div class="video-placeholder" data-src="${escapeText(film.player)}">`,
-      `<img src="${escapeText(film.cover)}" alt="${escapeText(film.title)}" loading="lazy">`,
+      `<img src="${escapeText(optimizedImageUrl(film.cover, "small"))}" alt="${escapeText(film.title)}" loading="lazy" decoding="async">`,
       "</div>",
     ].join("");
   }
@@ -176,8 +196,9 @@
       container.className = "image-container";
 
       const enlarged = document.createElement("img");
-      enlarged.src = image.src;
+      enlarged.src = image.dataset.largeSrc || image.currentSrc || image.src;
       enlarged.alt = image.alt;
+      enlarged.decoding = "async";
       enlarged.addEventListener("click", function (innerEvent) {
         innerEvent.stopPropagation();
       });

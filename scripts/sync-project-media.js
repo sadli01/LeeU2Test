@@ -5,8 +5,10 @@ const path = require("path");
 const { execFileSync } = require("child_process");
 
 const root = path.resolve(__dirname, "..");
+const localMediaRoot = path.join(root, "local", "original-images");
 const projectsFile = path.join(root, "assets/data/projects.json");
 const imagePattern = /\.(webp|jpe?g|png|gif)$/i;
+const imageOrigin = "https://img.leeu2.com";
 
 const args = new Set(process.argv.slice(2));
 const dryRun = args.has("--dry-run");
@@ -28,11 +30,25 @@ function readArg(name) {
 }
 
 function sitePathToFull(sitePath) {
+  if (sitePath.startsWith("/pic/")) {
+    return path.join(localMediaRoot, sitePath.slice("/pic/".length));
+  }
   return path.join(root, sitePath.replace(/^\//, ""));
 }
 
 function toSitePath(fullPath) {
+  if (fullPath === localMediaRoot || fullPath.startsWith(`${localMediaRoot}${path.sep}`)) {
+    return `/pic/${path.relative(localMediaRoot, fullPath).replace(/\\/g, "/")}`;
+  }
   return `/${path.relative(root, fullPath).replace(/\\/g, "/")}`;
+}
+
+function toPublicImageUrl(sitePath) {
+  return sitePath.startsWith("/pic/") ? `${imageOrigin}${sitePath.slice(4)}` : sitePath;
+}
+
+function toLocalSitePath(value) {
+  return value?.startsWith(`${imageOrigin}/`) ? `/pic/${value.slice(imageOrigin.length + 1)}` : value;
 }
 
 function naturalCompare(a, b) {
@@ -140,7 +156,7 @@ function detailPageHtml(title, projectId) {
 }
 
 function collectImageDirs(baseDir) {
-  const fullBase = path.join(root, baseDir);
+  const fullBase = sitePathToFull(`/${baseDir.replace(/^\//, "")}`);
   if (!fs.existsSync(fullBase)) return [];
 
   const result = [];
@@ -170,11 +186,12 @@ function createProjectForMediaDir(projects, category, mediaDir) {
   const id = uniqueProjectId(projects, `${category}-${slug}`);
   const title = titleFromDirName(dirName, category);
   const page = `/${categoryConfig[category].pageDir}/${slug}/`;
-  const images = listImageFiles(mediaDir).map((src, order) => {
-    const meta = readImageMeta(src);
+  const localImages = listImageFiles(mediaDir);
+  const images = localImages.map((localSrc, order) => {
+    const meta = readImageMeta(localSrc);
     return {
-      src,
-      alt: basenameWithoutExt(src),
+      src: toPublicImageUrl(localSrc),
+      alt: basenameWithoutExt(localSrc),
       orientation: meta.orientation,
       aspectRatio: meta.aspectRatio,
       visible: true,
@@ -182,7 +199,9 @@ function createProjectForMediaDir(projects, category, mediaDir) {
     };
   });
   const cover = images[0]?.src || "";
-  const coverMeta = cover ? readImageMeta(cover) : { orientation: "portrait", aspectRatio: "2 / 3" };
+  const coverMeta = localImages[0]
+    ? readImageMeta(localImages[0])
+    : { orientation: "portrait", aspectRatio: "2 / 3" };
 
   return {
     id,
@@ -216,20 +235,22 @@ function syncProject(project) {
   const files = listImageFiles(project.mediaDir);
   const filesSet = new Set(files);
   const existingImages = Array.isArray(project.images) ? project.images : [];
-  const existingBySrc = new Map(existingImages.map((image) => [image.src, image]));
-  const removed = existingImages.filter((image) => image.src && !filesSet.has(image.src));
-  const kept = existingImages.filter((image) => image.src && filesSet.has(image.src));
-  const keptSources = new Set(kept.map((image) => image.src));
+  const existingBySrc = new Map(existingImages.map((image) => [toLocalSitePath(image.src), image]));
+  const removed = existingImages.filter((image) => image.src && !filesSet.has(toLocalSitePath(image.src)));
+  const kept = existingImages
+    .filter((image) => image.src && filesSet.has(toLocalSitePath(image.src)))
+    .map((image) => ({ ...image, src: toPublicImageUrl(toLocalSitePath(image.src)) }));
+  const keptSources = new Set(kept.map((image) => toLocalSitePath(image.src)));
   const addedSources = files.filter((src) => !keptSources.has(src));
 
   const usedOrders = kept.map((image) => Number(image.order)).filter(Number.isFinite);
   let nextOrder = usedOrders.length ? Math.max(...usedOrders) + 1 : 0;
 
-  const added = addedSources.map((src) => {
-    const meta = readImageMeta(src);
+  const added = addedSources.map((localSrc) => {
+    const meta = readImageMeta(localSrc);
     return {
-      src,
-      alt: basenameWithoutExt(src),
+      src: toPublicImageUrl(localSrc),
+      alt: basenameWithoutExt(localSrc),
       orientation: meta.orientation,
       aspectRatio: meta.aspectRatio,
       visible: true,
@@ -239,13 +260,19 @@ function syncProject(project) {
 
   project.images = kept.concat(added);
 
-  if (!project.cover || !filesSet.has(project.cover)) {
+  const localCover = toLocalSitePath(project.cover);
+  if (!project.cover || !filesSet.has(localCover)) {
     project.cover = project.images.find((image) => image.visible !== false)?.src || project.images[0]?.src || project.cover;
+  } else {
+    project.cover = toPublicImageUrl(localCover);
   }
 
-  if (project.cover && filesSet.has(project.cover)) {
-    const coverImage = existingBySrc.get(project.cover) || project.images.find((image) => image.src === project.cover);
-    const meta = coverImage?.orientation && coverImage?.aspectRatio ? coverImage : readImageMeta(project.cover);
+  const updatedLocalCover = toLocalSitePath(project.cover);
+  if (project.cover && filesSet.has(updatedLocalCover)) {
+    const coverImage =
+      existingBySrc.get(updatedLocalCover) ||
+      project.images.find((image) => toLocalSitePath(image.src) === updatedLocalCover);
+    const meta = coverImage?.orientation && coverImage?.aspectRatio ? coverImage : readImageMeta(updatedLocalCover);
     project.coverOrientation = meta.orientation;
     project.coverAspectRatio = meta.aspectRatio;
   }
