@@ -11,6 +11,8 @@ from urllib.parse import parse_qs, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE_DIR = ROOT / ".cache" / "editor-thumbs"
+LOCAL_MEDIA_ROOT = ROOT / "local" / "original-images"
+IMAGE_ORIGIN = "https://img.leeu2.com"
 ALLOWED_FILES = {
     "projects.json": ROOT / "assets" / "data" / "projects.json",
     "films.json": ROOT / "assets" / "data" / "films.json",
@@ -72,11 +74,18 @@ class AdminHandler(SimpleHTTPRequestHandler):
             src = query.get("src", [""])[0]
             size = int(query.get("size", ["160"])[0])
             size = max(48, min(size, 420))
+            if src.startswith(f"{IMAGE_ORIGIN}/"):
+                src = f"/pic/{src[len(IMAGE_ORIGIN) + 1:]}"
             if not src.startswith(("/pic/", "/assets/")):
                 raise ValueError("invalid image path")
 
-            source = (ROOT / src.lstrip("/")).resolve()
-            if ROOT not in source.parents or not source.exists():
+            if src.startswith("/pic/"):
+                source = (LOCAL_MEDIA_ROOT / src[len("/pic/"):]).resolve()
+                allowed_root = LOCAL_MEDIA_ROOT
+            else:
+                source = (ROOT / src.lstrip("/")).resolve()
+                allowed_root = ROOT
+            if allowed_root not in source.parents or not source.exists():
                 raise ValueError("image not found")
 
             CACHE_DIR.mkdir(parents=True, exist_ok=True)
@@ -119,8 +128,8 @@ class AdminHandler(SimpleHTTPRequestHandler):
             if not media_dir.startswith("/pic/"):
                 raise ValueError("invalid media directory")
 
-            directory = (ROOT / media_dir.lstrip("/")).resolve()
-            if ROOT not in directory.parents or not directory.is_dir():
+            directory = (LOCAL_MEDIA_ROOT / media_dir[len("/pic/"):]).resolve()
+            if LOCAL_MEDIA_ROOT not in directory.parents or not directory.is_dir():
                 raise ValueError("media directory not found")
 
             images = []
@@ -130,7 +139,8 @@ class AdminHandler(SimpleHTTPRequestHandler):
 
                 width, height = read_dimensions(file_path)
                 orientation = "landscape" if width >= height else "portrait"
-                src = "/" + str(file_path.relative_to(ROOT)).replace("\\", "/")
+                relative_src = str(file_path.relative_to(LOCAL_MEDIA_ROOT)).replace("\\", "/")
+                src = f"{IMAGE_ORIGIN}/{relative_src}"
                 images.append(
                     {
                         "src": src,

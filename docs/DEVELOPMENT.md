@@ -9,7 +9,7 @@ LeeU2 作品集网站采用原生 HTML/CSS/JavaScript。当前项目不依赖前
 - 页面负责结构和挂载点。
 - 作品内容由 `assets/data/` 管理。
 - 公共展示逻辑由 `assets/js/galleryRenderer.js` 管理。
-- 图片资源继续存放在 `pic/`。
+- 原始图片只保存在 `local/original-images/`，网页通过 Cloudflare R2 URL 加载。
 
 ## 技术栈
 
@@ -136,7 +136,7 @@ secret
   "category": "photo",
   "page": "/photoproj/photo10.html",
   "mediaDir": "/pic/photo/photo10_ProjectName",
-  "cover": "/pic/photo/photo10_ProjectName/photo10_0.webp",
+  "cover": "https://img.leeu2.com/photo/photo10_ProjectName/photo10_0.webp",
   "visible": true,
   "showInCategory": true,
   "featured": false,
@@ -151,7 +151,7 @@ secret
 
 ```json
 {
-  "src": "/pic/photo/photo10_ProjectName/photo10_0.webp",
+  "src": "https://img.leeu2.com/photo/photo10_ProjectName/photo10_0.webp",
   "alt": "photo10_0",
   "visible": true,
   "order": 0
@@ -231,7 +231,7 @@ http://localhost:8000
 作品目录：
 
 ```text
-pic/{category}/{category}{number}_{ProjectName}/
+local/original-images/{category}/{category}{number}_{ProjectName}/
 ```
 
 图片文件：
@@ -243,7 +243,7 @@ pic/{category}/{category}{number}_{ProjectName}/
 示例：
 
 ```text
-pic/photo/photo10_NightGarden/photo10_0.webp
+local/original-images/photo/photo10_NightGarden/photo10_0.webp
 ```
 
 已有旧命名无需强制修改。

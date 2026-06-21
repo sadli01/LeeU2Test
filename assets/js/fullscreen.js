@@ -22,8 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
         imgContainer.className = 'image-container';
   
         const imgElement = document.createElement('img');
-        imgElement.src = img.src;
+        imgElement.src = img.dataset.largeSrc || img.currentSrc || img.src;
         imgElement.alt = img.alt;
+        imgElement.decoding = 'async';
         imgElement.addEventListener('click', e => e.stopPropagation());
   
         const closeBtn = document.createElement('button');

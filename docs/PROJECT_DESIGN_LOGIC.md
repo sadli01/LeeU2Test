@@ -493,10 +493,10 @@ body {
 
 当前推荐按现有模式操作：
 
-1. 在 `pic/` 对应分类下创建图片目录。
+1. 在 `local/original-images/` 对应分类下创建图片目录。本文其他 `pic/` 示例属于历史结构；当前 JSON 仅保留 `/pic/...` 逻辑路径。
 
    ```text
-   pic/photo/photo10_ProjectName/
+   local/original-images/photo/photo10_ProjectName/
    ```
 
 2. 将图片转为 `.webp` 后放入目录。

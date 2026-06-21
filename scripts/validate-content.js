@@ -4,6 +4,8 @@ const fs = require("fs");
 const path = require("path");
 
 const root = path.resolve(__dirname, "..");
+const localMediaRoot = path.join(root, "local", "original-images");
+const imageOrigin = "https://img.leeu2.com";
 const errors = [];
 const warnings = [];
 
@@ -17,12 +19,25 @@ function readJson(file) {
   }
 }
 
+function toLocalSitePath(value) {
+  if (value?.startsWith(`${imageOrigin}/`)) {
+    return `/pic/${value.slice(imageOrigin.length + 1)}`;
+  }
+  return value;
+}
+
 function exists(sitePath) {
-  return fs.existsSync(path.join(root, sitePath.replace(/^\//, "")));
+  const localPath = toLocalSitePath(sitePath);
+  if (localPath?.startsWith("/pic/")) {
+    return fs.existsSync(path.join(localMediaRoot, localPath.slice("/pic/".length)));
+  }
+  return fs.existsSync(path.join(root, localPath.replace(/^\//, "")));
 }
 
 function listImageFiles(dir) {
-  const fullDir = path.join(root, dir.replace(/^\//, ""));
+  const fullDir = dir.startsWith("/pic/")
+    ? path.join(localMediaRoot, dir.slice("/pic/".length))
+    : path.join(root, dir.replace(/^\//, ""));
   if (!fs.existsSync(fullDir)) return [];
   return fs
     .readdirSync(fullDir)
@@ -31,7 +46,9 @@ function listImageFiles(dir) {
 }
 
 function collectMediaDirs(baseDir) {
-  const fullBase = path.join(root, baseDir);
+  const fullBase = baseDir.startsWith("pic/")
+    ? path.join(localMediaRoot, baseDir.slice("pic/".length))
+    : path.join(root, baseDir);
   if (!fs.existsSync(fullBase)) return [];
 
   const result = [];
@@ -39,7 +56,7 @@ function collectMediaDirs(baseDir) {
     const entries = fs.readdirSync(dir, { withFileTypes: true });
     const imageCount = entries.filter((entry) => entry.isFile() && /\.(webp|jpe?g|png|gif)$/i.test(entry.name)).length;
     if (imageCount) {
-      result.push(`/${path.relative(root, dir).replace(/\\/g, "/")}`);
+      result.push(`/pic/${path.relative(localMediaRoot, dir).replace(/\\/g, "/")}`);
     }
     entries.filter((entry) => entry.isDirectory()).forEach((entry) => walk(path.join(dir, entry.name)));
   }
@@ -85,15 +102,16 @@ function validateProjects(data) {
         errors.push(`${project.id}: image missing src`);
         continue;
       }
-      if (imageSources.has(image.src)) errors.push(`${project.id}: duplicate image ${image.src}`);
-      imageSources.add(image.src);
+      const localImageSrc = toLocalSitePath(image.src);
+      if (imageSources.has(localImageSrc)) errors.push(`${project.id}: duplicate image ${image.src}`);
+      imageSources.add(localImageSrc);
 
       if (!exists(image.src)) errors.push(`${project.id}: image not found ${image.src}`);
       if (orders.has(image.order)) warnings.push(`${project.id}: duplicate image order ${image.order}`);
       orders.add(image.order);
     }
 
-    if (project.cover && images.length && !imageSources.has(project.cover)) {
+    if (project.cover && images.length && !imageSources.has(toLocalSitePath(project.cover))) {
       warnings.push(`${project.id}: cover is not listed in images`);
     }
 

@@ -41,13 +41,10 @@ LeeU2Test/
 │   │   ├── navunderline.js     # 兼容文件
 │   │   └── galleryRenderer.js  # 数据渲染脚本
 │   └── fonts/
-├── pic/                        # 图片和视频封面资源
-│   ├── makeup/
-│   ├── photo/
-│   ├── portrait/
-│   ├── secret/
-│   ├── film/
-│   └── contact/
+├── local/                      # 仅本地保存，整个目录不提交 Git
+│   ├── original-images/        # 原始图片和视频封面资源
+│   ├── image-variants/         # 1280px / 2560px 网页衍生图
+│   └── tools/                  # 个人临时图片处理脚本
 ├── makeup/                     # 妆发分类页
 ├── photo/                      # 摄影分类页
 ├── portrait/                   # Portrait 分类页
@@ -160,10 +157,10 @@ Home 标签页只管理首页封面：可调整封面的显示/隐藏和首页�
 
 ### 新增作品集
 
-1. 在 `pic/` 对应分类下创建作品目录。
+1. 在 `local/original-images/` 对应分类下创建作品目录。
 
    ```text
-   pic/photo/photo10_ProjectName/
+   local/original-images/photo/photo10_ProjectName/
    ```
 
 2. 放入 `.webp` 图片。
@@ -195,8 +192,8 @@ node scripts/validate-content.js
 同步脚本会根据 `projects.json` 中每个作品的 `mediaDir` 扫描对应图片目录，例如：
 
 ```text
-pic/portrait/hiking/
-pic/secret/secret8_Mountain/
+local/original-images/portrait/hiking/
+local/original-images/secret/Mountain/
 ```
 
 它会自动完成：
@@ -241,14 +238,14 @@ node scripts/sync-project-media.js --create-missing --dry-run
 
 推荐操作顺序：
 
-1. 把图片放入或移出对应 `pic/` 子目录。
+1. 把图片放入或移出对应 `local/original-images/` 子目录。
 2. 如果是新增文件夹，运行 `node scripts/sync-project-media.js --create-missing --dry-run` 预览变化。
 3. 如果只是已有文件夹图片增删，运行 `node scripts/sync-project-media.js --dry-run` 预览变化。
 4. 确认无误后运行 `node scripts/sync-project-media.js --create-missing` 或 `node scripts/sync-project-media.js` 写入。
 5. 运行 `node scripts/validate-content.js` 校验。
 6. 如需调整封面、显隐或顺序，再打开 `/admin/gallery-editor.html` 微调。
 
-注意：自动创建只处理 `pic/makeup/`、`pic/photo/`、`pic/portrait/`、`pic/secret/` 下含图片的文件夹。`pic/film/` 和 `pic/contact/` 不会自动创建作品集页面。
+注意：自动创建只处理 `local/original-images/makeup/`、`photo/`、`portrait/`、`secret/` 下含图片的文件夹。`film/` 和 `contact/` 不会自动创建作品集页面。JSON 中的 `mediaDir` 仍使用逻辑路径 `/pic/...`。
 
 ### 校验内容数据
 
@@ -270,5 +267,7 @@ node scripts/validate-content.js
 - [项目设计逻辑](PROJECT_DESIGN_LOGIC.md)
 - [设计与资源管理优化方案](DESIGN_RESOURCE_OPTIMIZATION_PLAN.md)
 - [内容与图片集管理指南](CONTENT_MANAGEMENT_GUIDE.md)
+- [项目文件分区](PROJECT_FILE_LAYOUT.md)
+- [图片与 R2 方案](IMAGE_STORAGE_AND_R2.md)
 - [开发指南](DEVELOPMENT.md)
 - [优化总结](OPTIMIZATION_SUMMARY.md)

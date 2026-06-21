@@ -24,7 +24,15 @@
 
    开发视角的页面挂载点、脚本职责、数据格式和校验方式。
 
-6. [OPTIMIZATION_SUMMARY.md](OPTIMIZATION_SUMMARY.md)
+6. [IMAGE_STORAGE_AND_R2.md](IMAGE_STORAGE_AND_R2.md)
+
+   当前图片在本地与 Cloudflare R2 中的保存、引用、同步和校验方案。
+
+7. [PROJECT_FILE_LAYOUT.md](PROJECT_FILE_LAYOUT.md)
+
+   GitHub 发布源码与本地图片、缓存、个人工具之间的目录边界。
+
+8. [OPTIMIZATION_SUMMARY.md](OPTIMIZATION_SUMMARY.md)
 
    已完成优化阶段总结。
 

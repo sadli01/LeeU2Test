@@ -72,10 +72,10 @@ http://localhost:8000/admin/gallery-editor.html
 
 ## 4. 新增作品集建议流程
 
-1. 在 `pic/` 下创建对应分类的作品目录。
+1. 在 `local/original-images/` 下创建对应分类的作品目录。
 
    ```text
-   pic/photo/photo10_ProjectName/
+   local/original-images/photo/photo10_ProjectName/
    ```
 
 2. 将图片放入目录，并尽量使用统一命名。
@@ -150,7 +150,7 @@ node scripts/sync-project-media.js
 node scripts/validate-content.js
 ```
 
-当 `pic/makeup/`、`pic/photo/`、`pic/portrait/` 或 `pic/secret/` 下新增了一个作品文件夹，并且希望自动生成对应项目和子页面时，运行：
+当 `local/original-images/makeup/`、`photo/`、`portrait/` 或 `secret/` 下新增了一个作品文件夹，并且希望自动生成对应项目和子页面时，运行：
 
 ```bash
 node scripts/sync-project-media.js --create-missing
@@ -159,7 +159,7 @@ node scripts/validate-content.js
 
 同步脚本会：
 
-- 根据每个作品的 `mediaDir` 扫描图片文件。
+- 将 `mediaDir` 中的逻辑 `/pic/...` 路径映射到本地 `local/original-images/...`，再扫描图片文件。
 - 自动追加新增图片。
 - 自动移除已经不存在的图片路径。
 - 保留已有图片的排序、显隐、封面等手动设置。
