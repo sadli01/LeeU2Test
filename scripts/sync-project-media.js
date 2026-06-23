@@ -92,6 +92,10 @@ function basenameWithoutExt(src) {
   return path.basename(src).replace(/\.[^.]+$/, "");
 }
 
+function pathWithoutExt(src) {
+  return src.replace(/\.[^.]+$/, "");
+}
+
 function slugify(value) {
   return String(value)
     .trim()
@@ -234,12 +238,28 @@ function writeDetailPage(project) {
 function syncProject(project) {
   const files = listImageFiles(project.mediaDir);
   const filesSet = new Set(files);
+  const filesByStem = new Map(files.map((src) => [pathWithoutExt(src), src]));
   const existingImages = Array.isArray(project.images) ? project.images : [];
-  const existingBySrc = new Map(existingImages.map((image) => [toLocalSitePath(image.src), image]));
-  const removed = existingImages.filter((image) => image.src && !filesSet.has(toLocalSitePath(image.src)));
-  const kept = existingImages
-    .filter((image) => image.src && filesSet.has(toLocalSitePath(image.src)))
-    .map((image) => ({ ...image, src: toPublicImageUrl(toLocalSitePath(image.src)) }));
+  const existingBySrc = new Map();
+  const claimedFiles = new Set();
+  const removed = [];
+  const kept = [];
+  const migrated = [];
+
+  existingImages.forEach((image) => {
+    if (!image.src) return;
+    const localSrc = toLocalSitePath(image.src);
+    const replacement = filesSet.has(localSrc) ? localSrc : filesByStem.get(pathWithoutExt(localSrc));
+    if (!replacement || claimedFiles.has(replacement)) {
+      removed.push(image);
+      return;
+    }
+    claimedFiles.add(replacement);
+    existingBySrc.set(replacement, image);
+    if (replacement !== localSrc) migrated.push({ from: image.src, to: toPublicImageUrl(replacement) });
+    kept.push({ ...image, src: toPublicImageUrl(replacement) });
+  });
+
   const keptSources = new Set(kept.map((image) => toLocalSitePath(image.src)));
   const addedSources = files.filter((src) => !keptSources.has(src));
 
@@ -261,10 +281,12 @@ function syncProject(project) {
   project.images = kept.concat(added);
 
   const localCover = toLocalSitePath(project.cover);
-  if (!project.cover || !filesSet.has(localCover)) {
+  const migratedCover =
+    localCover && (filesSet.has(localCover) ? localCover : filesByStem.get(pathWithoutExt(localCover)));
+  if (!project.cover || !migratedCover) {
     project.cover = project.images.find((image) => image.visible !== false)?.src || project.images[0]?.src || project.cover;
   } else {
-    project.cover = toPublicImageUrl(localCover);
+    project.cover = toPublicImageUrl(migratedCover);
   }
 
   const updatedLocalCover = toLocalSitePath(project.cover);
@@ -283,6 +305,7 @@ function syncProject(project) {
     mediaDir: project.mediaDir,
     added: added.map((image) => image.src),
     removed: removed.map((image) => image.src),
+    migrated,
     total: project.images.length,
   };
 }
@@ -305,7 +328,9 @@ const selectedProjects = projects.filter((project) => {
   return project.mediaDir && project.mediaDir.startsWith("/pic/");
 });
 
-const summaries = selectedProjects.map(syncProject).filter((summary) => summary.added.length || summary.removed.length);
+const summaries = selectedProjects
+  .map(syncProject)
+  .filter((summary) => summary.added.length || summary.removed.length || summary.migrated.length);
 const createdPageSummaries = createdProjects.map((project) => ({
   id: project.id,
   title: project.title,
@@ -332,7 +357,12 @@ if (!summaries.length && !createdPageSummaries.length) {
   });
 
   summaries.forEach((summary) => {
-    if (createdProjects.some((project) => project.id === summary.id) && !summary.added.length && !summary.removed.length) {
+    if (
+      createdProjects.some((project) => project.id === summary.id) &&
+      !summary.added.length &&
+      !summary.removed.length &&
+      !summary.migrated.length
+    ) {
       return;
     }
     console.log(`${summary.id} (${summary.mediaDir})`);
@@ -344,6 +374,10 @@ if (!summaries.length && !createdPageSummaries.length) {
     if (summary.removed.length) {
       console.log(`  removed: ${summary.removed.length}`);
       summary.removed.forEach((src) => console.log(`    - ${src}`));
+    }
+    if (summary.migrated.length) {
+      console.log(`  migrated to WebP: ${summary.migrated.length}`);
+      summary.migrated.forEach(({ from, to }) => console.log(`    ~ ${from} -> ${to}`));
     }
   });
 }
