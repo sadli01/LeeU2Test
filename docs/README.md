@@ -108,6 +108,13 @@ python3 scripts/admin_server.py
 http://localhost:8000/admin/gallery-editor.html
 ```
 
+如果 8000 已被其他项目占用，服务器会自动使用下一个可用端口，并在终端
+打印实际地址。也可以手动指定：
+
+```bash
+python3 scripts/admin_server.py --port 8001
+```
+
 编辑器中可以使用：
 
 - `保存到本地项目`：直接把当前板块的数据写回本地 JSON 文件。
@@ -134,7 +141,36 @@ lsof -tiTCP:8000 -sTCP:LISTEN | xargs kill
 lsof -iTCP:8000 -sTCP:LISTEN -n -P
 ```
 
-如果运行 `python3 scripts/admin_server.py` 时看到 `Address already in use`，说明 8000 端口已经有服务器在运行。可以直接访问 `http://localhost:8000/admin/gallery-editor.html`，或者先关闭旧服务再重新启动。
+如果 8000 端口已被其他服务占用，不要直接假设该服务就是 LeeU2。新的
+`admin_server.py` 会自动选择 8001 等空闲端口，请使用终端打印的编辑器地址。
+如需强制使用指定端口并在冲突时报错，可添加 `--strict-port`。
+
+### 页面显示 `{"detail":"Not Found"}`
+
+该 JSON 通常由 FastAPI/Uvicorn 返回，表示浏览器连接到了占用 8000 端口的
+其他 API 服务，而不是 LeeU2 编辑服务器。
+
+先确认端口属于哪个进程：
+
+```bash
+lsof -nP -iTCP:8000 -sTCP:LISTEN
+```
+
+然后启动 LeeU2：
+
+```bash
+python3 scripts/admin_server.py
+```
+
+终端会输出实际地址：
+
+```text
+Port 8000 is busy; using port 8001 instead.
+LeeU2 website: http://localhost:8001/
+LeeU2 gallery editor: http://localhost:8001/admin/gallery-editor.html
+```
+
+请以该输出为准，不需要停止占用 8000 端口的其他项目。
 
 ## 内容更新
 
@@ -163,22 +199,108 @@ Home 标签页只管理首页封面：可调整封面的显示/隐藏和首页�
    local/original-images/photo/photo10_ProjectName/
    ```
 
-2. 放入 `.webp` 图片。
-3. 运行自动创建命令。
+2. 直接放入 `.jpg` 或 `.jpeg` 图片。
+3. 先预览完整更新流程。
 
    ```bash
-   node scripts/sync-project-media.js --create-missing
-   node scripts/validate-content.js
+   bash scripts/update-portfolio.sh --dry-run
    ```
 
-4. 使用编辑器调整封面、排序、首页展示和展示状态。
+4. 确认后执行转换、内容更新和远端上传。
+
+   ```bash
+   bash scripts/update-portfolio.sh
+   ```
+
+5. 如需同时发布到 GitHub 并通过 Pull Request 合并到 `main`：
+
+   ```bash
+   bash scripts/update-portfolio.sh --github
+   ```
+
+6. 使用编辑器调整封面、排序、首页展示和展示状态。
+
+#### 完整发布命令
+
+推荐先预览完整流程：
+
+```bash
+bash scripts/update-portfolio.sh --dry-run --github
+```
+
+确认预览结果后，执行完整发布：
+
+```bash
+bash scripts/update-portfolio.sh \
+  --github \
+  --commit-message="Add new portfolio"
+```
+
+如果工作区中已经存在且全部属于本次发布的改动，可使用：
+
+```bash
+git status --short
+
+bash scripts/update-portfolio.sh \
+  --github \
+  --include-existing-changes \
+  --commit-message="Add new portfolio"
+```
+
+`--include-existing-changes` 会将命令运行前的现有 Git 改动一并提交，因此必须
+先确认 `git status --short` 中没有无关文件。默认不使用该参数时，脚本仍会
+拒绝在脏工作区发布。
+
+该命令执行顺序如下：
+
+```text
+更新 local/original-images/
+→ JPG/JPEG 自动转为 WebP
+→ 同步作品数据并创建缺失详情页
+→ 生成 1280px 和 2560px 响应式图片
+→ 校验内容
+→ 增量上传到 Cloudflare R2
+→ 创建 GitHub 发布分支、提交并推送
+→ 创建 Pull Request
+→ 合并到 main
+```
+
+如果只希望更新本地并发布 GitHub，不上传 R2：
+
+```bash
+bash scripts/update-portfolio.sh \
+  --no-upload \
+  --github \
+  --commit-message="Update portfolio content"
+```
 
 脚本会自动完成：
 
+- 将 JPG/JPEG 转为同名 WebP，并在转换成功后删除 JPG/JPEG。
 - 在 `assets/data/projects.json` 中新增作品记录。
 - 在对应详情页目录中创建子页面，例如 `/photoproj/photo10-projectname.html`。
 - 根据图片尺寸生成横竖图配置。
+- 生成 1280px 和 2560px 响应式 WebP。
+- 增量上传原图和响应式图片到 Cloudflare R2。
+- 使用 `--github` 时，创建发布分支、提交并推送、创建 Pull Request，
+  然后合并到 `main`。
 - 默认让新作品显示在分类页，但不默认显示在首页。是否放到 Home 可以在编辑器中打开 `featured`。
+
+上传使用 `rclone copy`，不会删除远端已有对象。如只更新本地而不上传：
+
+```bash
+bash scripts/update-portfolio.sh --no-upload
+```
+
+GitHub 发布要求安装并登录 GitHub CLI：
+
+```bash
+brew install gh
+gh auth login
+```
+
+运行 `--github` 前必须位于干净的 `main` 工作区。脚本不会强推 `main`；
+如果分支保护或 CI 阻止合并，会保留 Pull Request。
 
 ### 同步图片文件夹增删
 

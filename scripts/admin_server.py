@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
+import argparse
 import hashlib
 import json
 import mimetypes
 import re
+import socket
 import subprocess
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -180,9 +182,40 @@ def read_dimensions(file_path):
     return int(width_match.group(1)), int(height_match.group(1))
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="Run the LeeU2 website and gallery editor.")
+    parser.add_argument("--host", default="127.0.0.1", help="Host to bind (default: 127.0.0.1)")
+    parser.add_argument("--port", type=int, default=8000, help="Preferred port (default: 8000)")
+    parser.add_argument(
+        "--strict-port",
+        action="store_true",
+        help="Fail instead of selecting the next available port when the preferred port is busy.",
+    )
+    return parser.parse_args()
+
+
+def find_available_port(host, preferred_port, strict):
+    port = preferred_port
+    while port <= 65535:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as probe:
+            try:
+                probe.bind((host, port))
+                return port
+            except OSError:
+                if strict:
+                    raise
+                port += 1
+    raise RuntimeError(f"No available port found at or above {preferred_port}")
+
+
 def main():
-    server = ReusableThreadingHTTPServer(("0.0.0.0", 8000), AdminHandler)
-    print("LeeU2 admin server: http://localhost:8000/admin/gallery-editor.html")
+    args = parse_args()
+    port = find_available_port(args.host, args.port, args.strict_port)
+    server = ReusableThreadingHTTPServer((args.host, port), AdminHandler)
+    if port != args.port:
+        print(f"Port {args.port} is busy; using port {port} instead.")
+    print(f"LeeU2 website: http://localhost:{port}/")
+    print(f"LeeU2 gallery editor: http://localhost:{port}/admin/gallery-editor.html")
     server.serve_forever()
 
 

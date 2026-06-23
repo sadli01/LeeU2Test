@@ -1641,7 +1641,7 @@
       "showInCategory": true,
       "featured": true,
       "homeOrder": 23,
-      "categoryOrder": 0,
+      "categoryOrder": 2,
       "layout": "single-column",
       "images": [
         {
@@ -1765,7 +1765,7 @@
       "showInCategory": true,
       "featured": true,
       "homeOrder": 25,
-      "categoryOrder": 4,
+      "categoryOrder": 3,
       "layout": "single-column",
       "images": [
         {
@@ -1887,7 +1887,7 @@
       "showInCategory": true,
       "featured": true,
       "homeOrder": 26,
-      "categoryOrder": 5,
+      "categoryOrder": 4,
       "layout": "single-column",
       "images": [
         {
@@ -2129,7 +2129,7 @@
       "showInCategory": true,
       "featured": true,
       "homeOrder": 27,
-      "categoryOrder": 6,
+      "categoryOrder": 5,
       "layout": "single-column",
       "images": [
         {
@@ -2407,7 +2407,7 @@
       "coverAspectRatio": "2 / 3",
       "images": [
         {
-          "src": "https://img.leeu2.com/portrait/hangzhou_czk/suzhou-czk-0.jpg",
+          "src": "https://img.leeu2.com/portrait/hangzhou_czk/suzhou-czk-0.webp",
           "alt": "suzhou-czk-0",
           "visible": false,
           "order": 0,
@@ -2447,7 +2447,7 @@
           "aspectRatio": "2 / 3"
         },
         {
-          "src": "https://img.leeu2.com/portrait/hangzhou_czk/suzhou-czk-6.jpg",
+          "src": "https://img.leeu2.com/portrait/hangzhou_czk/suzhou-czk-6.webp",
           "alt": "suzhou-czk-6",
           "visible": true,
           "order": 5,
@@ -2455,7 +2455,7 @@
           "aspectRatio": "2 / 3"
         },
         {
-          "src": "https://img.leeu2.com/portrait/hangzhou_czk/suzhou-czk-5.jpg",
+          "src": "https://img.leeu2.com/portrait/hangzhou_czk/suzhou-czk-5.webp",
           "alt": "suzhou-czk-5",
           "visible": true,
           "order": 6,
@@ -2463,7 +2463,7 @@
           "aspectRatio": "2 / 3"
         },
         {
-          "src": "https://img.leeu2.com/portrait/hangzhou_czk/suzhou-czk-1.jpg",
+          "src": "https://img.leeu2.com/portrait/hangzhou_czk/suzhou-czk-1.webp",
           "alt": "suzhou-czk-1",
           "visible": true,
           "order": 7,
@@ -2471,7 +2471,7 @@
           "aspectRatio": "2 / 3"
         },
         {
-          "src": "https://img.leeu2.com/portrait/hangzhou_czk/suzhou-czk-2.jpg",
+          "src": "https://img.leeu2.com/portrait/hangzhou_czk/suzhou-czk-2.webp",
           "alt": "suzhou-czk-2",
           "visible": true,
           "order": 8,
@@ -2479,7 +2479,7 @@
           "aspectRatio": "2 / 3"
         },
         {
-          "src": "https://img.leeu2.com/portrait/hangzhou_czk/suzhou-czk-3.jpg",
+          "src": "https://img.leeu2.com/portrait/hangzhou_czk/suzhou-czk-3.webp",
           "alt": "suzhou-czk-3",
           "visible": false,
           "order": 9,
@@ -2487,7 +2487,7 @@
           "aspectRatio": "3 / 2"
         },
         {
-          "src": "https://img.leeu2.com/portrait/hangzhou_czk/suzhou-czk-4.jpg",
+          "src": "https://img.leeu2.com/portrait/hangzhou_czk/suzhou-czk-4.webp",
           "alt": "suzhou-czk-4",
           "visible": true,
           "order": 10,
@@ -3126,7 +3126,7 @@
       "category": "photo",
       "page": "/photoproj/photo8-1-genderless-bandw/",
       "mediaDir": "/pic/photo/Genderless_B&W",
-      "cover": "https://img.leeu2.com/photo/Genderless_B&W/DSC05673.jpg",
+      "cover": "https://img.leeu2.com/photo/Genderless_B&W/DSC05673.webp",
       "visible": true,
       "showInCategory": true,
       "featured": false,
@@ -3137,7 +3137,7 @@
       "coverAspectRatio": "2 / 3",
       "images": [
         {
-          "src": "https://img.leeu2.com/photo/Genderless_B&W/DSC04923 2.jpg",
+          "src": "https://img.leeu2.com/photo/Genderless_B&W/DSC04923 2.webp",
           "alt": "DSC04923 2",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -3145,7 +3145,7 @@
           "order": 0
         },
         {
-          "src": "https://img.leeu2.com/photo/Genderless_B&W/DSC05673.jpg",
+          "src": "https://img.leeu2.com/photo/Genderless_B&W/DSC05673.webp",
           "alt": "DSC05673",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
@@ -3153,12 +3153,94 @@
           "order": 1
         },
         {
-          "src": "https://img.leeu2.com/photo/Genderless_B&W/DSC05231 1.jpg",
+          "src": "https://img.leeu2.com/photo/Genderless_B&W/DSC05231 1.webp",
           "alt": "DSC05231 1",
           "orientation": "portrait",
           "aspectRatio": "2 / 3",
           "visible": true,
           "order": 2
+        }
+      ]
+    },
+    {
+      "id": "secret-sea",
+      "title": "Sea",
+      "category": "secret",
+      "page": "/secretproj/sea/",
+      "mediaDir": "/pic/secret/sea",
+      "cover": "https://img.leeu2.com/secret/sea/nanyadao-2026_1_1.10.1.webp",
+      "visible": true,
+      "showInCategory": true,
+      "featured": false,
+      "homeOrder": 28,
+      "categoryOrder": 0,
+      "layout": "single-column",
+      "coverOrientation": "landscape",
+      "coverAspectRatio": "3 / 2",
+      "images": [
+        {
+          "src": "https://img.leeu2.com/secret/sea/nanyadao-2026_1_1.1.1.webp",
+          "alt": "nanyadao-2026_1_1.1.1",
+          "orientation": "landscape",
+          "aspectRatio": "3 / 2",
+          "visible": true,
+          "order": 0
+        },
+        {
+          "src": "https://img.leeu2.com/secret/sea/nanyadao-2026_1_1.5.1.webp",
+          "alt": "nanyadao-2026_1_1.5.1",
+          "orientation": "landscape",
+          "aspectRatio": "3 / 2",
+          "visible": true,
+          "order": 1
+        },
+        {
+          "src": "https://img.leeu2.com/secret/sea/nanyadao-2026_1_1.10.1.webp",
+          "alt": "nanyadao-2026_1_1.10.1",
+          "orientation": "landscape",
+          "aspectRatio": "3 / 2",
+          "visible": true,
+          "order": 2
+        },
+        {
+          "src": "https://img.leeu2.com/secret/sea/nanyadao-2026_1_1.11.1.webp",
+          "alt": "nanyadao-2026_1_1.11.1",
+          "orientation": "landscape",
+          "aspectRatio": "3 / 2",
+          "visible": true,
+          "order": 3
+        },
+        {
+          "src": "https://img.leeu2.com/secret/sea/nanyadao-2026_1_1.12.1.webp",
+          "alt": "nanyadao-2026_1_1.12.1",
+          "orientation": "landscape",
+          "aspectRatio": "3 / 2",
+          "visible": true,
+          "order": 4
+        },
+        {
+          "src": "https://img.leeu2.com/secret/sea/nanyadao-2026_1_1.14.1.webp",
+          "alt": "nanyadao-2026_1_1.14.1",
+          "orientation": "landscape",
+          "aspectRatio": "3 / 2",
+          "visible": true,
+          "order": 5
+        },
+        {
+          "src": "https://img.leeu2.com/secret/sea/nanyadao-2026_1_1.16.1.webp",
+          "alt": "nanyadao-2026_1_1.16.1",
+          "orientation": "landscape",
+          "aspectRatio": "3 / 2",
+          "visible": true,
+          "order": 6
+        },
+        {
+          "src": "https://img.leeu2.com/secret/sea/nanyadao-2026_1.7.2.webp",
+          "alt": "nanyadao-2026_1.7.2",
+          "orientation": "landscape",
+          "aspectRatio": "3 / 2",
+          "visible": true,
+          "order": 7
         }
       ]
     }

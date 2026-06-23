@@ -10,6 +10,7 @@ if [[ ! -d local/image-variants/small || ! -d local/image-variants/large ]]; the
 fi
 
 rclone copy local/image-variants r2:leeu2-images/optimized \
+  --exclude '.DS_Store' \
   --exclude '**/.DS_Store' \
   --metadata \
   --metadata-set 'cache-control=public, max-age=31536000, immutable' \
